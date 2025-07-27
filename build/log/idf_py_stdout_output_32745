@@ -1,0 +1,62 @@
+[0/1] Re-running CMake...
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s3
+NOTICE: 
+Following dependencies have new versions available:
+Dependency "espressif/esp_jpeg": "1.3.0" -> "1.3.1"
+Consider running "idf.py update-dependencies" to update your lock file.
+NOTICE: Processing 2 dependencies:
+NOTICE: [1/2] espressif/esp_jpeg (1.3.0)
+NOTICE: [2/2] idf (5.1.2)
+-- Project sdkconfig file /home/j/Downloads/DoingTV/sdkconfig
+Loading defaults file /home/j/Downloads/DoingTV/sdkconfig.defaults...
+/home/j/Downloads/DoingTV/sdkconfig.defaults:28 CONFIG_ESP32S3_DEFAULT_CPU_FREQ_240 was replaced with CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240
+/home/j/Downloads/DoingTV/sdkconfig.defaults:29 CONFIG_ESP32S3_DEFAULT_CPU_FREQ_MHZ was replaced with CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ
+-- App "DoingTV" version: 1
+-- Adding linker script /home/j/Downloads/DoingTV/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/j/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /home/j/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/j/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/j/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/j/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/j/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /home/j/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt charging_indicator cmock console cxx decode_jpeg decode_png driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__esp_jpeg esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon pngle power_button protobuf-c protocol_examples_common protocomm pthread sdmmc soc spi_flash spiffs st7789 tcp_transport touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/j/esp-idf/components/app_trace /home/j/esp-idf/components/app_update /home/j/esp-idf/components/bootloader /home/j/esp-idf/components/bootloader_support /home/j/esp-idf/components/bt /home/j/Downloads/DoingTV/components/charging_indicator /home/j/esp-idf/components/cmock /home/j/esp-idf/components/console /home/j/esp-idf/components/cxx /home/j/Downloads/DoingTV/components/decode_jpeg /home/j/Downloads/DoingTV/components/decode_png /home/j/esp-idf/components/driver /home/j/esp-idf/components/efuse /home/j/esp-idf/components/esp-tls /home/j/esp-idf/components/esp_adc /home/j/esp-idf/components/esp_app_format /home/j/esp-idf/components/esp_coex /home/j/esp-idf/components/esp_common /home/j/esp-idf/components/esp_eth /home/j/esp-idf/components/esp_event /home/j/esp-idf/components/esp_gdbstub /home/j/esp-idf/components/esp_hid /home/j/esp-idf/components/esp_http_client /home/j/esp-idf/components/esp_http_server /home/j/esp-idf/components/esp_https_ota /home/j/esp-idf/components/esp_https_server /home/j/esp-idf/components/esp_hw_support /home/j/esp-idf/components/esp_lcd /home/j/esp-idf/components/esp_local_ctrl /home/j/esp-idf/components/esp_mm /home/j/esp-idf/components/esp_netif /home/j/esp-idf/components/esp_netif_stack /home/j/esp-idf/components/esp_partition /home/j/esp-idf/components/esp_phy /home/j/esp-idf/components/esp_pm /home/j/esp-idf/components/esp_psram /home/j/esp-idf/components/esp_ringbuf /home/j/esp-idf/components/esp_rom /home/j/esp-idf/components/esp_system /home/j/esp-idf/components/esp_timer /home/j/esp-idf/components/esp_wifi /home/j/esp-idf/components/espcoredump /home/j/Downloads/DoingTV/managed_components/espressif__esp_jpeg /home/j/esp-idf/components/esptool_py /home/j/esp-idf/components/fatfs /home/j/esp-idf/components/freertos /home/j/esp-idf/components/hal /home/j/esp-idf/components/heap /home/j/esp-idf/components/http_parser /home/j/esp-idf/components/idf_test /home/j/esp-idf/components/ieee802154 /home/j/esp-idf/components/json /home/j/esp-idf/components/log /home/j/esp-idf/components/lwip /home/j/Downloads/DoingTV/main /home/j/esp-idf/components/mbedtls /home/j/esp-idf/components/mqtt /home/j/esp-idf/components/newlib /home/j/esp-idf/components/nvs_flash /home/j/esp-idf/components/openthread /home/j/esp-idf/components/partition_table /home/j/esp-idf/components/perfmon /home/j/Downloads/DoingTV/components/pngle /home/j/Downloads/DoingTV/components/power_button /home/j/esp-idf/components/protobuf-c /home/j/esp-idf/examples/common_components/protocol_examples_common /home/j/esp-idf/components/protocomm /home/j/esp-idf/components/pthread /home/j/esp-idf/components/sdmmc /home/j/esp-idf/components/soc /home/j/esp-idf/components/spi_flash /home/j/esp-idf/components/spiffs /home/j/Downloads/DoingTV/components/st7789 /home/j/esp-idf/components/tcp_transport /home/j/esp-idf/components/touch_element /home/j/esp-idf/components/ulp /home/j/esp-idf/components/unity /home/j/esp-idf/components/usb /home/j/esp-idf/components/vfs /home/j/esp-idf/components/wear_levelling /home/j/esp-idf/components/wifi_provisioning /home/j/esp-idf/components/wpa_supplicant /home/j/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/j/Downloads/DoingTV/build
+[1/9] cd /home/j/Downloads/DoingTV/build && /home/j/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/j/esp-idf/components/spiffs/spiffsgen.py 0x20000 /home/j/Downloads/DoingTV/fonts /home/j/Downloads/DoingTV/build/storage1.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len
+[2/9] cd /home/j/Downloads/DoingTV/build && /home/j/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/j/esp-idf/components/spiffs/spiffsgen.py 0x500000 /home/j/Downloads/DoingTV/images /home/j/Downloads/DoingTV/build/storage2.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len
+[3/9] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file /home/j/Downloads/DoingTV/sdkconfig
+Compiler supported targets: xtensa-esp32s3-elf
+
+-- Adding linker script /home/j/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- App "bootloader" version: v5.1.2
+-- Adding linker script /home/j/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/j/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/j/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/j/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/j/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.ld
+-- Adding linker script /home/j/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /home/j/esp-idf/components/bootloader /home/j/esp-idf/components/bootloader_support /home/j/esp-idf/components/efuse /home/j/esp-idf/components/esp_app_format /home/j/esp-idf/components/esp_common /home/j/esp-idf/components/esp_hw_support /home/j/esp-idf/components/esp_rom /home/j/esp-idf/components/esp_system /home/j/esp-idf/components/esptool_py /home/j/esp-idf/components/freertos /home/j/esp-idf/components/hal /home/j/esp-idf/components/log /home/j/esp-idf/components/bootloader/subproject/main /home/j/esp-idf/components/bootloader/subproject/components/micro-ecc /home/j/esp-idf/components/newlib /home/j/esp-idf/components/partition_table /home/j/esp-idf/components/soc /home/j/esp-idf/components/spi_flash /home/j/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/j/Downloads/DoingTV/build/bootloader
+[1/1] cd /home/j/Downloads/DoingTV/build/bootloader/esp-idf/esptool_py && /home/j/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/j/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/j/Downloads/DoingTV/build/bootloader/bootloader.bin
+Bootloader binary size 0x51a0 bytes. 0x2e60 bytes (36%) free.
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable DoingTV.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.9.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/j/Downloads/DoingTV/build/DoingTV.bin
+[7/7] cd /home/j/Downloads/DoingTV/build/esp-idf/esptool_py && /home/j/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/j/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/j/Downloads/DoingTV/build/partition_table/partition-table.bin /home/j/Downloads/DoingTV/build/DoingTV.bin
+DoingTV.bin binary size 0xd7c90 bytes. Smallest app partition is 0x100000 bytes. 0x28370 bytes (16%) free.

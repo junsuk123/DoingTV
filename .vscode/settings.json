@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "file_serving_example_common.h": "c",
+        "param.h": "c"
+    },
+    "idf.espIdfPath": "/home/j/esp-idf",
+    "idf.toolsPath": "/home/j/.espressif",
+    "idf.pythonInstallPath": "/usr/bin/python3"
+}
