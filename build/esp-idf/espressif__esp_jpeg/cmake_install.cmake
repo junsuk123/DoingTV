@@ -1,4 +1,4 @@
-# Install script for directory: /home/j/Downloads/DoingTV/managed_components/espressif__esp_jpeg
+# Install script for directory: /home/j/DoingObject/DoingTV/managed_components/espressif__esp_jpeg
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

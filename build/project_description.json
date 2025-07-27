@@ -1,13 +1,13 @@
 {
     "version":            "1",
     "project_name":       "DoingTV",
-    "project_version":    "1",
-    "project_path":       "/home/j/Downloads/DoingTV",
+    "project_version":    "1f34308-dirty",
+    "project_path":       "/home/j/DoingObject/DoingTV",
     "idf_path":           "/home/j/esp-idf",
-    "build_dir":          "/home/j/Downloads/DoingTV/build",
-    "config_file":        "/home/j/Downloads/DoingTV/sdkconfig",
-    "config_defaults":    "/home/j/Downloads/DoingTV/sdkconfig.defaults",
-    "bootloader_elf":     "/home/j/Downloads/DoingTV/build/bootloader/bootloader.elf",
+    "build_dir":          "/home/j/DoingObject/DoingTV/build",
+    "config_file":        "/home/j/DoingObject/DoingTV/sdkconfig",
+    "config_defaults":    "/home/j/DoingObject/DoingTV/sdkconfig.defaults",
+    "bootloader_elf":     "/home/j/DoingObject/DoingTV/build/bootloader/bootloader.elf",
     "app_elf":            "DoingTV.elf",
     "app_bin":            "DoingTV.bin",
     "build_type":         "flash_app",
@@ -21,12 +21,12 @@
     "monitor_toolprefix": "xtensa-esp32s3-elf-",
     "c_compiler":         "/home/j/.espressif/tools/xtensa-esp32s3-elf/esp-12.2.0_20230208/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc",
     "config_environment" : {
-        "COMPONENT_KCONFIGS" : "/home/j/esp-idf/components/app_trace/Kconfig;/home/j/esp-idf/components/bt/Kconfig;/home/j/esp-idf/components/driver/Kconfig;/home/j/esp-idf/components/efuse/Kconfig;/home/j/esp-idf/components/esp-tls/Kconfig;/home/j/esp-idf/components/esp_adc/Kconfig;/home/j/esp-idf/components/esp_coex/Kconfig;/home/j/esp-idf/components/esp_common/Kconfig;/home/j/esp-idf/components/esp_eth/Kconfig;/home/j/esp-idf/components/esp_event/Kconfig;/home/j/esp-idf/components/esp_gdbstub/Kconfig;/home/j/esp-idf/components/esp_http_client/Kconfig;/home/j/esp-idf/components/esp_http_server/Kconfig;/home/j/esp-idf/components/esp_https_ota/Kconfig;/home/j/esp-idf/components/esp_https_server/Kconfig;/home/j/esp-idf/components/esp_hw_support/Kconfig;/home/j/esp-idf/components/esp_lcd/Kconfig;/home/j/esp-idf/components/esp_netif/Kconfig;/home/j/esp-idf/components/esp_partition/Kconfig;/home/j/esp-idf/components/esp_phy/Kconfig;/home/j/esp-idf/components/esp_pm/Kconfig;/home/j/esp-idf/components/esp_psram/Kconfig;/home/j/esp-idf/components/esp_ringbuf/Kconfig;/home/j/esp-idf/components/esp_system/Kconfig;/home/j/esp-idf/components/esp_timer/Kconfig;/home/j/esp-idf/components/esp_wifi/Kconfig;/home/j/esp-idf/components/espcoredump/Kconfig;/home/j/esp-idf/components/fatfs/Kconfig;/home/j/esp-idf/components/freertos/Kconfig;/home/j/esp-idf/components/hal/Kconfig;/home/j/esp-idf/components/heap/Kconfig;/home/j/esp-idf/components/ieee802154/Kconfig;/home/j/esp-idf/components/log/Kconfig;/home/j/esp-idf/components/lwip/Kconfig;/home/j/esp-idf/components/mbedtls/Kconfig;/home/j/esp-idf/components/mqtt/esp-mqtt/Kconfig;/home/j/esp-idf/components/newlib/Kconfig;/home/j/esp-idf/components/nvs_flash/Kconfig;/home/j/esp-idf/components/openthread/Kconfig;/home/j/esp-idf/components/protocomm/Kconfig;/home/j/esp-idf/components/pthread/Kconfig;/home/j/esp-idf/components/soc/Kconfig;/home/j/esp-idf/components/spi_flash/Kconfig;/home/j/esp-idf/components/spiffs/Kconfig;/home/j/esp-idf/components/tcp_transport/Kconfig;/home/j/esp-idf/components/ulp/Kconfig;/home/j/esp-idf/components/unity/Kconfig;/home/j/esp-idf/components/usb/Kconfig;/home/j/esp-idf/components/vfs/Kconfig;/home/j/esp-idf/components/wear_levelling/Kconfig;/home/j/esp-idf/components/wifi_provisioning/Kconfig;/home/j/Downloads/DoingTV/managed_components/espressif__esp_jpeg/Kconfig",
-        "COMPONENT_KCONFIGS_PROJBUILD" : "/home/j/esp-idf/components/bootloader/Kconfig.projbuild;/home/j/esp-idf/components/esp_app_format/Kconfig.projbuild;/home/j/esp-idf/components/esp_rom/Kconfig.projbuild;/home/j/esp-idf/components/esptool_py/Kconfig.projbuild;/home/j/esp-idf/components/partition_table/Kconfig.projbuild;/home/j/esp-idf/examples/common_components/protocol_examples_common/Kconfig.projbuild;/home/j/Downloads/DoingTV/components/st7789/Kconfig.projbuild"
+        "COMPONENT_KCONFIGS" : "/home/j/esp-idf/components/app_trace/Kconfig;/home/j/esp-idf/components/bt/Kconfig;/home/j/esp-idf/components/driver/Kconfig;/home/j/esp-idf/components/efuse/Kconfig;/home/j/esp-idf/components/esp-tls/Kconfig;/home/j/esp-idf/components/esp_adc/Kconfig;/home/j/esp-idf/components/esp_coex/Kconfig;/home/j/esp-idf/components/esp_common/Kconfig;/home/j/esp-idf/components/esp_eth/Kconfig;/home/j/esp-idf/components/esp_event/Kconfig;/home/j/esp-idf/components/esp_gdbstub/Kconfig;/home/j/esp-idf/components/esp_http_client/Kconfig;/home/j/esp-idf/components/esp_http_server/Kconfig;/home/j/esp-idf/components/esp_https_ota/Kconfig;/home/j/esp-idf/components/esp_https_server/Kconfig;/home/j/esp-idf/components/esp_hw_support/Kconfig;/home/j/esp-idf/components/esp_lcd/Kconfig;/home/j/esp-idf/components/esp_netif/Kconfig;/home/j/esp-idf/components/esp_partition/Kconfig;/home/j/esp-idf/components/esp_phy/Kconfig;/home/j/esp-idf/components/esp_pm/Kconfig;/home/j/esp-idf/components/esp_psram/Kconfig;/home/j/esp-idf/components/esp_ringbuf/Kconfig;/home/j/esp-idf/components/esp_system/Kconfig;/home/j/esp-idf/components/esp_timer/Kconfig;/home/j/esp-idf/components/esp_wifi/Kconfig;/home/j/esp-idf/components/espcoredump/Kconfig;/home/j/esp-idf/components/fatfs/Kconfig;/home/j/esp-idf/components/freertos/Kconfig;/home/j/esp-idf/components/hal/Kconfig;/home/j/esp-idf/components/heap/Kconfig;/home/j/esp-idf/components/ieee802154/Kconfig;/home/j/esp-idf/components/log/Kconfig;/home/j/esp-idf/components/lwip/Kconfig;/home/j/esp-idf/components/mbedtls/Kconfig;/home/j/esp-idf/components/mqtt/esp-mqtt/Kconfig;/home/j/esp-idf/components/newlib/Kconfig;/home/j/esp-idf/components/nvs_flash/Kconfig;/home/j/esp-idf/components/openthread/Kconfig;/home/j/esp-idf/components/protocomm/Kconfig;/home/j/esp-idf/components/pthread/Kconfig;/home/j/esp-idf/components/soc/Kconfig;/home/j/esp-idf/components/spi_flash/Kconfig;/home/j/esp-idf/components/spiffs/Kconfig;/home/j/esp-idf/components/tcp_transport/Kconfig;/home/j/esp-idf/components/ulp/Kconfig;/home/j/esp-idf/components/unity/Kconfig;/home/j/esp-idf/components/usb/Kconfig;/home/j/esp-idf/components/vfs/Kconfig;/home/j/esp-idf/components/wear_levelling/Kconfig;/home/j/esp-idf/components/wifi_provisioning/Kconfig;/home/j/DoingObject/DoingTV/managed_components/espressif__esp_jpeg/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "/home/j/esp-idf/components/bootloader/Kconfig.projbuild;/home/j/esp-idf/components/esp_app_format/Kconfig.projbuild;/home/j/esp-idf/components/esp_rom/Kconfig.projbuild;/home/j/esp-idf/components/esptool_py/Kconfig.projbuild;/home/j/esp-idf/components/partition_table/Kconfig.projbuild;/home/j/esp-idf/examples/common_components/protocol_examples_common/Kconfig.projbuild;/home/j/DoingObject/DoingTV/components/st7789/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "xtensa" ],
-    "build_components" : [ "app_trace", "app_update", "bootloader", "bootloader_support", "bt", "charging_indicator", "cmock", "console", "cxx", "decode_jpeg", "decode_png", "driver", "efuse", "esp-tls", "esp_adc", "esp_app_format", "esp_coex", "esp_common", "esp_eth", "esp_event", "esp_gdbstub", "esp_hid", "esp_http_client", "esp_http_server", "esp_https_ota", "esp_https_server", "esp_hw_support", "esp_lcd", "esp_local_ctrl", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_system", "esp_timer", "esp_wifi", "espcoredump", "espressif__esp_jpeg", "esptool_py", "fatfs", "freertos", "hal", "heap", "http_parser", "idf_test", "ieee802154", "json", "log", "lwip", "main", "mbedtls", "mqtt", "newlib", "nvs_flash", "openthread", "partition_table", "perfmon", "pngle", "power_button", "protobuf-c", "protocol_examples_common", "protocomm", "pthread", "sdmmc", "soc", "spi_flash", "spiffs", "st7789", "tcp_transport", "touch_element", "ulp", "unity", "usb", "vfs", "wear_levelling", "wifi_provisioning", "wpa_supplicant", "xtensa", "" ],
-    "build_component_paths" : [ "/home/j/esp-idf/components/app_trace", "/home/j/esp-idf/components/app_update", "/home/j/esp-idf/components/bootloader", "/home/j/esp-idf/components/bootloader_support", "/home/j/esp-idf/components/bt", "/home/j/Downloads/DoingTV/components/charging_indicator", "/home/j/esp-idf/components/cmock", "/home/j/esp-idf/components/console", "/home/j/esp-idf/components/cxx", "/home/j/Downloads/DoingTV/components/decode_jpeg", "/home/j/Downloads/DoingTV/components/decode_png", "/home/j/esp-idf/components/driver", "/home/j/esp-idf/components/efuse", "/home/j/esp-idf/components/esp-tls", "/home/j/esp-idf/components/esp_adc", "/home/j/esp-idf/components/esp_app_format", "/home/j/esp-idf/components/esp_coex", "/home/j/esp-idf/components/esp_common", "/home/j/esp-idf/components/esp_eth", "/home/j/esp-idf/components/esp_event", "/home/j/esp-idf/components/esp_gdbstub", "/home/j/esp-idf/components/esp_hid", "/home/j/esp-idf/components/esp_http_client", "/home/j/esp-idf/components/esp_http_server", "/home/j/esp-idf/components/esp_https_ota", "/home/j/esp-idf/components/esp_https_server", "/home/j/esp-idf/components/esp_hw_support", "/home/j/esp-idf/components/esp_lcd", "/home/j/esp-idf/components/esp_local_ctrl", "/home/j/esp-idf/components/esp_mm", "/home/j/esp-idf/components/esp_netif", "/home/j/esp-idf/components/esp_netif_stack", "/home/j/esp-idf/components/esp_partition", "/home/j/esp-idf/components/esp_phy", "/home/j/esp-idf/components/esp_pm", "/home/j/esp-idf/components/esp_psram", "/home/j/esp-idf/components/esp_ringbuf", "/home/j/esp-idf/components/esp_rom", "/home/j/esp-idf/components/esp_system", "/home/j/esp-idf/components/esp_timer", "/home/j/esp-idf/components/esp_wifi", "/home/j/esp-idf/components/espcoredump", "/home/j/Downloads/DoingTV/managed_components/espressif__esp_jpeg", "/home/j/esp-idf/components/esptool_py", "/home/j/esp-idf/components/fatfs", "/home/j/esp-idf/components/freertos", "/home/j/esp-idf/components/hal", "/home/j/esp-idf/components/heap", "/home/j/esp-idf/components/http_parser", "/home/j/esp-idf/components/idf_test", "/home/j/esp-idf/components/ieee802154", "/home/j/esp-idf/components/json", "/home/j/esp-idf/components/log", "/home/j/esp-idf/components/lwip", "/home/j/Downloads/DoingTV/main", "/home/j/esp-idf/components/mbedtls", "/home/j/esp-idf/components/mqtt", "/home/j/esp-idf/components/newlib", "/home/j/esp-idf/components/nvs_flash", "/home/j/esp-idf/components/openthread", "/home/j/esp-idf/components/partition_table", "/home/j/esp-idf/components/perfmon", "/home/j/Downloads/DoingTV/components/pngle", "/home/j/Downloads/DoingTV/components/power_button", "/home/j/esp-idf/components/protobuf-c", "/home/j/esp-idf/examples/common_components/protocol_examples_common", "/home/j/esp-idf/components/protocomm", "/home/j/esp-idf/components/pthread", "/home/j/esp-idf/components/sdmmc", "/home/j/esp-idf/components/soc", "/home/j/esp-idf/components/spi_flash", "/home/j/esp-idf/components/spiffs", "/home/j/Downloads/DoingTV/components/st7789", "/home/j/esp-idf/components/tcp_transport", "/home/j/esp-idf/components/touch_element", "/home/j/esp-idf/components/ulp", "/home/j/esp-idf/components/unity", "/home/j/esp-idf/components/usb", "/home/j/esp-idf/components/vfs", "/home/j/esp-idf/components/wear_levelling", "/home/j/esp-idf/components/wifi_provisioning", "/home/j/esp-idf/components/wpa_supplicant", "/home/j/esp-idf/components/xtensa", "" ],
+    "build_components" : [ "app_trace", "app_update", "bootloader", "bootloader_support", "bt", "charging_indicator", "cmock", "console", "cxx", "decode_jpeg", "decode_png", "driver", "efuse", "esp-tls", "esp_adc", "esp_app_format", "esp_coex", "esp_common", "esp_eth", "esp_event", "esp_gdbstub", "esp_hid", "esp_http_client", "esp_http_server", "esp_https_ota", "esp_https_server", "esp_hw_support", "esp_lcd", "esp_local_ctrl", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_system", "esp_timer", "esp_wifi", "espcoredump", "espressif__esp_jpeg", "esptool_py", "fatfs", "freertos", "hal", "heap", "http_parser", "idf_test", "ieee802154", "json", "log", "lwip", "main", "mbedtls", "mqtt", "newlib", "nvs_flash", "openthread", "partition_table", "perfmon", "pngle", "power_button", "protobuf-c", "protocol_examples_common", "protocomm", "pthread", "sdmmc", "soc", "spi_flash", "spiffs", "st7789", "tcp_transport", "touch_element", "ulp", "unity", "usb", "vfs", "wear_levelling", "wifi_provision", "wifi_provisioning", "wpa_supplicant", "xtensa", "" ],
+    "build_component_paths" : [ "/home/j/esp-idf/components/app_trace", "/home/j/esp-idf/components/app_update", "/home/j/esp-idf/components/bootloader", "/home/j/esp-idf/components/bootloader_support", "/home/j/esp-idf/components/bt", "/home/j/DoingObject/DoingTV/components/charging_indicator", "/home/j/esp-idf/components/cmock", "/home/j/esp-idf/components/console", "/home/j/esp-idf/components/cxx", "/home/j/DoingObject/DoingTV/components/decode_jpeg", "/home/j/DoingObject/DoingTV/components/decode_png", "/home/j/esp-idf/components/driver", "/home/j/esp-idf/components/efuse", "/home/j/esp-idf/components/esp-tls", "/home/j/esp-idf/components/esp_adc", "/home/j/esp-idf/components/esp_app_format", "/home/j/esp-idf/components/esp_coex", "/home/j/esp-idf/components/esp_common", "/home/j/esp-idf/components/esp_eth", "/home/j/esp-idf/components/esp_event", "/home/j/esp-idf/components/esp_gdbstub", "/home/j/esp-idf/components/esp_hid", "/home/j/esp-idf/components/esp_http_client", "/home/j/esp-idf/components/esp_http_server", "/home/j/esp-idf/components/esp_https_ota", "/home/j/esp-idf/components/esp_https_server", "/home/j/esp-idf/components/esp_hw_support", "/home/j/esp-idf/components/esp_lcd", "/home/j/esp-idf/components/esp_local_ctrl", "/home/j/esp-idf/components/esp_mm", "/home/j/esp-idf/components/esp_netif", "/home/j/esp-idf/components/esp_netif_stack", "/home/j/esp-idf/components/esp_partition", "/home/j/esp-idf/components/esp_phy", "/home/j/esp-idf/components/esp_pm", "/home/j/esp-idf/components/esp_psram", "/home/j/esp-idf/components/esp_ringbuf", "/home/j/esp-idf/components/esp_rom", "/home/j/esp-idf/components/esp_system", "/home/j/esp-idf/components/esp_timer", "/home/j/esp-idf/components/esp_wifi", "/home/j/esp-idf/components/espcoredump", "/home/j/DoingObject/DoingTV/managed_components/espressif__esp_jpeg", "/home/j/esp-idf/components/esptool_py", "/home/j/esp-idf/components/fatfs", "/home/j/esp-idf/components/freertos", "/home/j/esp-idf/components/hal", "/home/j/esp-idf/components/heap", "/home/j/esp-idf/components/http_parser", "/home/j/esp-idf/components/idf_test", "/home/j/esp-idf/components/ieee802154", "/home/j/esp-idf/components/json", "/home/j/esp-idf/components/log", "/home/j/esp-idf/components/lwip", "/home/j/DoingObject/DoingTV/main", "/home/j/esp-idf/components/mbedtls", "/home/j/esp-idf/components/mqtt", "/home/j/esp-idf/components/newlib", "/home/j/esp-idf/components/nvs_flash", "/home/j/esp-idf/components/openthread", "/home/j/esp-idf/components/partition_table", "/home/j/esp-idf/components/perfmon", "/home/j/DoingObject/DoingTV/components/pngle", "/home/j/DoingObject/DoingTV/components/power_button", "/home/j/esp-idf/components/protobuf-c", "/home/j/esp-idf/examples/common_components/protocol_examples_common", "/home/j/esp-idf/components/protocomm", "/home/j/esp-idf/components/pthread", "/home/j/esp-idf/components/sdmmc", "/home/j/esp-idf/components/soc", "/home/j/esp-idf/components/spi_flash", "/home/j/esp-idf/components/spiffs", "/home/j/DoingObject/DoingTV/components/st7789", "/home/j/esp-idf/components/tcp_transport", "/home/j/esp-idf/components/touch_element", "/home/j/esp-idf/components/ulp", "/home/j/esp-idf/components/unity", "/home/j/esp-idf/components/usb", "/home/j/esp-idf/components/vfs", "/home/j/esp-idf/components/wear_levelling", "/home/j/DoingObject/DoingTV/components/wifi_provision", "/home/j/esp-idf/components/wifi_provisioning", "/home/j/esp-idf/components/wpa_supplicant", "/home/j/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
         "app_trace": {
             "alias": "idf::app_trace",
@@ -39,7 +39,7 @@
             "priv_reqs": [ "soc", "driver" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/app_trace/libapp_trace.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/app_trace/libapp_trace.a",
             "sources": [ "/home/j/esp-idf/components/app_trace/app_trace.c", "/home/j/esp-idf/components/app_trace/app_trace_util.c", "/home/j/esp-idf/components/app_trace/host_file_io.c", "/home/j/esp-idf/components/app_trace/port/port_uart.c" ],
             "include_dirs": [ "include" ]
         },
@@ -54,7 +54,7 @@
             "priv_reqs": [ "esptool_py", "efuse", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/app_update/libapp_update.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/app_update/libapp_update.a",
             "sources": [ "/home/j/esp-idf/components/app_update/esp_ota_ops.c", "/home/j/esp-idf/components/app_update/esp_ota_app_desc.c" ],
             "include_dirs": [ "include" ]
         },
@@ -84,7 +84,7 @@
             "priv_reqs": [ "spi_flash", "mbedtls", "efuse", "heap", "esp_app_format" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/bootloader_support/libbootloader_support.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/bootloader_support/libbootloader_support.a",
             "sources": [ "/home/j/esp-idf/components/bootloader_support/src/bootloader_common.c", "/home/j/esp-idf/components/bootloader_support/src/bootloader_common_loader.c", "/home/j/esp-idf/components/bootloader_support/src/bootloader_clock_init.c", "/home/j/esp-idf/components/bootloader_support/src/bootloader_mem.c", "/home/j/esp-idf/components/bootloader_support/src/bootloader_random.c", "/home/j/esp-idf/components/bootloader_support/src/bootloader_random_esp32s3.c", "/home/j/esp-idf/components/bootloader_support/src/bootloader_efuse.c", "/home/j/esp-idf/components/bootloader_support/src/flash_encrypt.c", "/home/j/esp-idf/components/bootloader_support/src/secure_boot.c", "/home/j/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c", "/home/j/esp-idf/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c", "/home/j/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32s3.c", "/home/j/esp-idf/components/bootloader_support/src/bootloader_utility.c", "/home/j/esp-idf/components/bootloader_support/src/flash_partitions.c", "/home/j/esp-idf/components/bootloader_support/src/esp_image_format.c", "/home/j/esp-idf/components/bootloader_support/src/idf/bootloader_sha.c" ],
             "include_dirs": [ "include", "bootloader_flash/include" ]
         },
@@ -93,29 +93,29 @@
             "target": "___idf_bt",
             "prefix": "idf",
             "dir": "/home/j/esp-idf/components/bt",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_bt",
             "reqs": [ "esp_timer", "esp_wifi" ],
             "priv_reqs": [ "nvs_flash", "soc", "esp_pm", "esp_phy", "esp_coex", "mbedtls", "driver", "vfs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
-            "include_dirs": []
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/bt/libbt.a",
+            "sources": [ "/home/j/esp-idf/components/bt/controller/esp32c3/bt.c", "/home/j/esp-idf/components/bt/common/btc/core/btc_alarm.c", "/home/j/esp-idf/components/bt/common/api/esp_blufi_api.c", "/home/j/esp-idf/components/bt/common/btc/core/btc_manage.c", "/home/j/esp-idf/components/bt/common/btc/core/btc_task.c", "/home/j/esp-idf/components/bt/common/btc/profile/esp/blufi/blufi_prf.c", "/home/j/esp-idf/components/bt/common/btc/profile/esp/blufi/blufi_protocol.c", "/home/j/esp-idf/components/bt/common/osi/alarm.c", "/home/j/esp-idf/components/bt/common/osi/allocator.c", "/home/j/esp-idf/components/bt/common/osi/buffer.c", "/home/j/esp-idf/components/bt/common/osi/config.c", "/home/j/esp-idf/components/bt/common/osi/fixed_queue.c", "/home/j/esp-idf/components/bt/common/osi/pkt_queue.c", "/home/j/esp-idf/components/bt/common/osi/fixed_pkt_queue.c", "/home/j/esp-idf/components/bt/common/osi/future.c", "/home/j/esp-idf/components/bt/common/osi/hash_functions.c", "/home/j/esp-idf/components/bt/common/osi/hash_map.c", "/home/j/esp-idf/components/bt/common/osi/list.c", "/home/j/esp-idf/components/bt/common/osi/mutex.c", "/home/j/esp-idf/components/bt/common/osi/thread.c", "/home/j/esp-idf/components/bt/common/osi/osi.c", "/home/j/esp-idf/components/bt/common/osi/semaphore.c", "/home/j/esp-idf/components/bt/porting/mem/bt_osi_mem.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/transport/src/transport.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/util/src/addr.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/gatt/src/ble_svc_gatt.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/tps/src/ble_svc_tps.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ias/src/ble_svc_ias.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ipss/src/ble_svc_ipss.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ans/src/ble_svc_ans.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/hr/src/ble_svc_hr.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/htp/src/ble_svc_htp.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/gap/src/ble_svc_gap.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/bas/src/ble_svc_bas.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/dis/src/ble_svc_dis.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/lls/src/ble_svc_lls.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/prox/src/ble_svc_prox.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_conn.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_store_util.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_sm.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_shutdown.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_l2cap_sig_cmd.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_hci_cmd.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_id.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_att_svr.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gatts_lcl.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_ibeacon.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_atomic.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_sm_alg.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_stop.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_hci_evt.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_mqueue.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_periodic_sync.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_att.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_ead.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_aes_ccm.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gattc.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_store.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_sm_lgcy.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_cfg.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_att_clt.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_l2cap_coc.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_mbuf.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_att_cmd.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_log.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_eddystone.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_startup.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_l2cap_sig.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gap.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_sm_cmd.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_uuid.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_pvcy.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_flow.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_l2cap.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_sm_sc.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_misc.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_gatts.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_adv.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_hci.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_hci_util.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_resolv.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/store/ram/src/ble_store_ram.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/store/config/src/ble_store_config.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/nimble/host/store/config/src/ble_store_nvs.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/nimble_port_freertos.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/endian.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/os_mempool.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/mem.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/os_mbuf.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/porting/nimble/src/os_msys_init.c", "/home/j/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c", "/home/j/esp-idf/components/bt/host/nimble/esp-hci/src/esp_nimble_hci.c", "/home/j/esp-idf/components/bt/common/btc/profile/esp/blufi/nimble_host/esp_blufi.c" ],
+            "include_dirs": [ "include/esp32c3/include", "common/osi/include", "common/api/include/api", "common/btc/profile/esp/blufi/include", "common/btc/profile/esp/include", "host/nimble/nimble/nimble/host/include", "host/nimble/nimble/nimble/host/services/ans/include", "host/nimble/nimble/nimble/host/services/bas/include", "host/nimble/nimble/nimble/host/services/dis/include", "host/nimble/nimble/nimble/host/services/gap/include", "host/nimble/nimble/nimble/host/services/gatt/include", "host/nimble/nimble/nimble/host/services/hr/include", "host/nimble/nimble/nimble/host/services/htp/include", "host/nimble/nimble/nimble/host/services/ias/include", "host/nimble/nimble/nimble/host/services/ipss/include", "host/nimble/nimble/nimble/host/services/lls/include", "host/nimble/nimble/nimble/host/services/prox/include", "host/nimble/nimble/nimble/host/services/tps/include", "host/nimble/nimble/nimble/host/util/include", "host/nimble/nimble/nimble/host/store/ram/include", "host/nimble/nimble/nimble/host/store/config/include", "porting/include", "host/nimble/nimble/porting/nimble/include", "host/nimble/port/include", "host/nimble/nimble/nimble/transport/include", "host/nimble/nimble/porting/npl/freertos/include", "host/nimble/nimble/porting/nimble/include", "host/nimble/nimble/nimble/include", "host/nimble/esp-hci/include" ]
         },
         "charging_indicator": {
             "alias": "idf::charging_indicator",
             "target": "___idf_charging_indicator",
             "prefix": "idf",
-            "dir": "/home/j/Downloads/DoingTV/components/charging_indicator",
+            "dir": "/home/j/DoingObject/DoingTV/components/charging_indicator",
             "type": "LIBRARY",
             "lib": "__idf_charging_indicator",
             "reqs": [ "driver", "esp_adc", "st7789" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/charging_indicator/libcharging_indicator.a",
-            "sources": [ "/home/j/Downloads/DoingTV/components/charging_indicator/charging_indicator.c" ],
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/charging_indicator/libcharging_indicator.a",
+            "sources": [ "/home/j/DoingObject/DoingTV/components/charging_indicator/charging_indicator.c" ],
             "include_dirs": [ "include" ]
         },
         "cmock": {
@@ -129,7 +129,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/cmock/libcmock.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/cmock/libcmock.a",
             "sources": [ "/home/j/esp-idf/components/cmock/CMock/src/cmock.c" ],
             "include_dirs": [ "CMock/src" ]
         },
@@ -144,7 +144,7 @@
             "priv_reqs": [ "driver" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/console/libconsole.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/console/libconsole.a",
             "sources": [ "/home/j/esp-idf/components/console/commands.c", "/home/j/esp-idf/components/console/esp_console_repl.c", "/home/j/esp-idf/components/console/split_argv.c", "/home/j/esp-idf/components/console/linenoise/linenoise.c", "/home/j/esp-idf/components/console/argtable3/arg_cmd.c", "/home/j/esp-idf/components/console/argtable3/arg_date.c", "/home/j/esp-idf/components/console/argtable3/arg_dbl.c", "/home/j/esp-idf/components/console/argtable3/arg_dstr.c", "/home/j/esp-idf/components/console/argtable3/arg_end.c", "/home/j/esp-idf/components/console/argtable3/arg_file.c", "/home/j/esp-idf/components/console/argtable3/arg_hashtable.c", "/home/j/esp-idf/components/console/argtable3/arg_int.c", "/home/j/esp-idf/components/console/argtable3/arg_lit.c", "/home/j/esp-idf/components/console/argtable3/arg_rem.c", "/home/j/esp-idf/components/console/argtable3/arg_rex.c", "/home/j/esp-idf/components/console/argtable3/arg_str.c", "/home/j/esp-idf/components/console/argtable3/arg_utils.c", "/home/j/esp-idf/components/console/argtable3/argtable3.c" ],
             "include_dirs": [ "." ]
         },
@@ -159,7 +159,7 @@
             "priv_reqs": [ "pthread" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/cxx/libcxx.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/cxx/libcxx.a",
             "sources": [ "/home/j/esp-idf/components/cxx/cxx_exception_stubs.cpp", "/home/j/esp-idf/components/cxx/cxx_guards.cpp" ],
             "include_dirs": []
         },
@@ -167,30 +167,30 @@
             "alias": "idf::decode_jpeg",
             "target": "___idf_decode_jpeg",
             "prefix": "idf",
-            "dir": "/home/j/Downloads/DoingTV/components/decode_jpeg",
+            "dir": "/home/j/DoingObject/DoingTV/components/decode_jpeg",
             "type": "LIBRARY",
             "lib": "__idf_decode_jpeg",
             "reqs": [],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/decode_jpeg/libdecode_jpeg.a",
-            "sources": [ "/home/j/Downloads/DoingTV/components/decode_jpeg/decode_jpeg_v5.c", "/home/j/Downloads/DoingTV/components/decode_jpeg/decode_jpeg.c" ],
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/decode_jpeg/libdecode_jpeg.a",
+            "sources": [ "/home/j/DoingObject/DoingTV/components/decode_jpeg/decode_jpeg_v5.c", "/home/j/DoingObject/DoingTV/components/decode_jpeg/decode_jpeg.c" ],
             "include_dirs": [ "include" ]
         },
         "decode_png": {
             "alias": "idf::decode_png",
             "target": "___idf_decode_png",
             "prefix": "idf",
-            "dir": "/home/j/Downloads/DoingTV/components/decode_png",
+            "dir": "/home/j/DoingObject/DoingTV/components/decode_png",
             "type": "LIBRARY",
             "lib": "__idf_decode_png",
             "reqs": [ "pngle" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/decode_png/libdecode_png.a",
-            "sources": [ "/home/j/Downloads/DoingTV/components/decode_png/decode_png.c" ],
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/decode_png/libdecode_png.a",
+            "sources": [ "/home/j/DoingObject/DoingTV/components/decode_png/decode_png.c" ],
             "include_dirs": [ "include" ]
         },
         "driver": {
@@ -204,7 +204,7 @@
             "priv_reqs": [ "efuse", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/driver/libdriver.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/driver/libdriver.a",
             "sources": [ "/home/j/esp-idf/components/driver/gpio/gpio.c", "/home/j/esp-idf/components/driver/gpio/gpio_glitch_filter_ops.c", "/home/j/esp-idf/components/driver/gpio/rtc_io.c", "/home/j/esp-idf/components/driver/spi/spi_bus_lock.c", "/home/j/esp-idf/components/driver/deprecated/adc_legacy.c", "/home/j/esp-idf/components/driver/deprecated/adc_dma_legacy.c", "/home/j/esp-idf/components/driver/gpio/dedic_gpio.c", "/home/j/esp-idf/components/driver/gpio/gpio_pin_glitch_filter.c", "/home/j/esp-idf/components/driver/gptimer/gptimer.c", "/home/j/esp-idf/components/driver/gptimer/gptimer_priv.c", "/home/j/esp-idf/components/driver/deprecated/timer_legacy.c", "/home/j/esp-idf/components/driver/i2c/i2c.c", "/home/j/esp-idf/components/driver/i2s/i2s_common.c", "/home/j/esp-idf/components/driver/i2s/i2s_std.c", "/home/j/esp-idf/components/driver/deprecated/i2s_legacy.c", "/home/j/esp-idf/components/driver/i2s/i2s_pdm.c", "/home/j/esp-idf/components/driver/i2s/i2s_tdm.c", "/home/j/esp-idf/components/driver/ledc/ledc.c", "/home/j/esp-idf/components/driver/mcpwm/mcpwm_cap.c", "/home/j/esp-idf/components/driver/mcpwm/mcpwm_cmpr.c", "/home/j/esp-idf/components/driver/mcpwm/mcpwm_com.c", "/home/j/esp-idf/components/driver/mcpwm/mcpwm_fault.c", "/home/j/esp-idf/components/driver/mcpwm/mcpwm_gen.c", "/home/j/esp-idf/components/driver/mcpwm/mcpwm_oper.c", "/home/j/esp-idf/components/driver/mcpwm/mcpwm_sync.c", "/home/j/esp-idf/components/driver/mcpwm/mcpwm_timer.c", "/home/j/esp-idf/components/driver/deprecated/mcpwm_legacy.c", "/home/j/esp-idf/components/driver/pcnt/pulse_cnt.c", "/home/j/esp-idf/components/driver/deprecated/pcnt_legacy.c", "/home/j/esp-idf/components/driver/rmt/rmt_common.c", "/home/j/esp-idf/components/driver/rmt/rmt_encoder.c", "/home/j/esp-idf/components/driver/rmt/rmt_rx.c", "/home/j/esp-idf/components/driver/rmt/rmt_tx.c", "/home/j/esp-idf/components/driver/deprecated/rmt_legacy.c", "/home/j/esp-idf/components/driver/sdmmc/sdmmc_transaction.c", "/home/j/esp-idf/components/driver/sdmmc/sdmmc_host.c", "/home/j/esp-idf/components/driver/sigma_delta/sdm.c", "/home/j/esp-idf/components/driver/deprecated/sigma_delta_legacy.c", "/home/j/esp-idf/components/driver/spi/gpspi/spi_common.c", "/home/j/esp-idf/components/driver/spi/gpspi/spi_master.c", "/home/j/esp-idf/components/driver/spi/gpspi/spi_slave.c", "/home/j/esp-idf/components/driver/spi/sdspi/sdspi_crc.c", "/home/j/esp-idf/components/driver/spi/sdspi/sdspi_host.c", "/home/j/esp-idf/components/driver/spi/sdspi/sdspi_transaction.c", "/home/j/esp-idf/components/driver/spi/gpspi/spi_slave_hd.c", "/home/j/esp-idf/components/driver/temperature_sensor/temperature_sensor.c", "/home/j/esp-idf/components/driver/deprecated/rtc_temperature_legacy.c", "/home/j/esp-idf/components/driver/touch_sensor/touch_sensor_common.c", "/home/j/esp-idf/components/driver/touch_sensor/esp32s3/touch_sensor.c", "/home/j/esp-idf/components/driver/twai/twai.c", "/home/j/esp-idf/components/driver/uart/uart.c", "/home/j/esp-idf/components/driver/usb_serial_jtag/usb_serial_jtag.c", "/home/j/esp-idf/components/driver/usb_serial_jtag/usb_serial_jtag_connection_monitor.c" ],
             "include_dirs": [ "include", "deprecated", "analog_comparator/include", "dac/include", "gpio/include", "gptimer/include", "i2c/include", "i2s/include", "ledc/include", "mcpwm/include", "parlio/include", "pcnt/include", "rmt/include", "sdio_slave/include", "sdmmc/include", "sigma_delta/include", "spi/include", "temperature_sensor/include", "touch_sensor/include", "twai/include", "uart/include", "usb_serial_jtag/include", "touch_sensor/esp32s3/include" ]
         },
@@ -219,7 +219,7 @@
             "priv_reqs": [ "bootloader_support", "soc", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/efuse/libefuse.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/efuse/libefuse.a",
             "sources": [ "/home/j/esp-idf/components/efuse/esp32s3/esp_efuse_table.c", "/home/j/esp-idf/components/efuse/esp32s3/esp_efuse_fields.c", "/home/j/esp-idf/components/efuse/esp32s3/esp_efuse_rtc_calib.c", "/home/j/esp-idf/components/efuse/esp32s3/esp_efuse_utility.c", "/home/j/esp-idf/components/efuse/src/esp_efuse_api.c", "/home/j/esp-idf/components/efuse/src/esp_efuse_fields.c", "/home/j/esp-idf/components/efuse/src/esp_efuse_utility.c", "/home/j/esp-idf/components/efuse/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c" ],
             "include_dirs": [ "include", "esp32s3/include" ]
         },
@@ -234,7 +234,7 @@
             "priv_reqs": [ "http_parser", "lwip" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp-tls/libesp-tls.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp-tls/libesp-tls.a",
             "sources": [ "/home/j/esp-idf/components/esp-tls/esp_tls.c", "/home/j/esp-idf/components/esp-tls/esp-tls-crypto/esp_tls_crypto.c", "/home/j/esp-idf/components/esp-tls/esp_tls_error_capture.c", "/home/j/esp-idf/components/esp-tls/esp_tls_mbedtls.c" ],
             "include_dirs": [ ".", "esp-tls-crypto" ]
         },
@@ -249,7 +249,7 @@
             "priv_reqs": [ "driver", "efuse" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_adc/libesp_adc.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_adc/libesp_adc.a",
             "sources": [ "/home/j/esp-idf/components/esp_adc/adc_cali.c", "/home/j/esp-idf/components/esp_adc/adc_cali_curve_fitting.c", "/home/j/esp-idf/components/esp_adc/adc_oneshot.c", "/home/j/esp-idf/components/esp_adc/adc_common.c", "/home/j/esp-idf/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c", "/home/j/esp-idf/components/esp_adc/adc_continuous.c", "/home/j/esp-idf/components/esp_adc/adc_filter.c", "/home/j/esp-idf/components/esp_adc/esp32s3/curve_fitting_coefficients.c", "/home/j/esp-idf/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c" ],
             "include_dirs": [ "include", "interface", "esp32s3/include", "deprecated/include" ]
         },
@@ -264,7 +264,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_app_format/libesp_app_format.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_app_format/libesp_app_format.a",
             "sources": [ "/home/j/esp-idf/components/esp_app_format/esp_app_desc.c" ],
             "include_dirs": [ "include" ]
         },
@@ -279,8 +279,8 @@
             "priv_reqs": [ "esp_timer", "driver", "esp_event" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_coex/libesp_coex.a",
-            "sources": [ "/home/j/esp-idf/components/esp_coex/esp32s3/esp_coex_adapter.c" ],
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_coex/libesp_coex.a",
+            "sources": [ "/home/j/esp-idf/components/esp_coex/src/coexist.c", "/home/j/esp-idf/components/esp_coex/esp32s3/esp_coex_adapter.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_common": {
@@ -294,7 +294,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_common/libesp_common.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_common/libesp_common.a",
             "sources": [ "/home/j/esp-idf/components/esp_common/src/esp_err_to_name.c" ],
             "include_dirs": [ "include" ]
         },
@@ -309,7 +309,7 @@
             "priv_reqs": [ "driver", "log", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_eth/libesp_eth.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_eth/libesp_eth.a",
             "sources": [ "/home/j/esp-idf/components/esp_eth/src/esp_eth.c", "/home/j/esp-idf/components/esp_eth/src/esp_eth_phy_802_3.c", "/home/j/esp-idf/components/esp_eth/src/esp_eth_netif_glue.c" ],
             "include_dirs": [ "include" ]
         },
@@ -324,7 +324,7 @@
             "priv_reqs": [ "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_event/libesp_event.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_event/libesp_event.a",
             "sources": [ "/home/j/esp-idf/components/esp_event/default_event_loop.c", "/home/j/esp-idf/components/esp_event/esp_event.c", "/home/j/esp-idf/components/esp_event/esp_event_private.c" ],
             "include_dirs": [ "include" ]
         },
@@ -339,7 +339,7 @@
             "priv_reqs": [ "soc", "esp_rom", "esp_system" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_gdbstub/libesp_gdbstub.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_gdbstub/libesp_gdbstub.a",
             "sources": [ "/home/j/esp-idf/components/esp_gdbstub/src/gdbstub.c", "/home/j/esp-idf/components/esp_gdbstub/src/gdbstub_transport.c", "/home/j/esp-idf/components/esp_gdbstub/src/packet.c", "/home/j/esp-idf/components/esp_gdbstub/src/port/xtensa/gdbstub_xtensa.c", "/home/j/esp-idf/components/esp_gdbstub/src/port/xtensa/gdbstub-entry.S", "/home/j/esp-idf/components/esp_gdbstub/src/port/xtensa/xt_debugexception.S" ],
             "include_dirs": [ "include" ]
         },
@@ -354,7 +354,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_hid/libesp_hid.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_hid/libesp_hid.a",
             "sources": [ "/home/j/esp-idf/components/esp_hid/src/esp_hidd.c", "/home/j/esp-idf/components/esp_hid/src/esp_hidh.c", "/home/j/esp-idf/components/esp_hid/src/esp_hid_common.c" ],
             "include_dirs": [ "include" ]
         },
@@ -369,7 +369,7 @@
             "priv_reqs": [ "tcp_transport", "http_parser" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_http_client/libesp_http_client.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_http_client/libesp_http_client.a",
             "sources": [ "/home/j/esp-idf/components/esp_http_client/esp_http_client.c", "/home/j/esp-idf/components/esp_http_client/lib/http_auth.c", "/home/j/esp-idf/components/esp_http_client/lib/http_header.c", "/home/j/esp-idf/components/esp_http_client/lib/http_utils.c" ],
             "include_dirs": [ "include" ]
         },
@@ -384,7 +384,7 @@
             "priv_reqs": [ "mbedtls", "lwip", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_http_server/libesp_http_server.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_http_server/libesp_http_server.a",
             "sources": [ "/home/j/esp-idf/components/esp_http_server/src/httpd_main.c", "/home/j/esp-idf/components/esp_http_server/src/httpd_parse.c", "/home/j/esp-idf/components/esp_http_server/src/httpd_sess.c", "/home/j/esp-idf/components/esp_http_server/src/httpd_txrx.c", "/home/j/esp-idf/components/esp_http_server/src/httpd_uri.c", "/home/j/esp-idf/components/esp_http_server/src/httpd_ws.c", "/home/j/esp-idf/components/esp_http_server/src/util/ctrl_sock.c" ],
             "include_dirs": [ "include" ]
         },
@@ -399,7 +399,7 @@
             "priv_reqs": [ "log", "app_update" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_https_ota/libesp_https_ota.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_https_ota/libesp_https_ota.a",
             "sources": [ "/home/j/esp-idf/components/esp_https_ota/src/esp_https_ota.c" ],
             "include_dirs": [ "include" ]
         },
@@ -429,7 +429,7 @@
             "priv_reqs": [ "efuse", "spi_flash", "bootloader_support", "driver", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_hw_support/libesp_hw_support.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_hw_support/libesp_hw_support.a",
             "sources": [ "/home/j/esp-idf/components/esp_hw_support/cpu.c", "/home/j/esp-idf/components/esp_hw_support/esp_memory_utils.c", "/home/j/esp-idf/components/esp_hw_support/port/esp32s3/cpu_region_protect.c", "/home/j/esp-idf/components/esp_hw_support/esp_clk.c", "/home/j/esp-idf/components/esp_hw_support/clk_ctrl_os.c", "/home/j/esp-idf/components/esp_hw_support/hw_random.c", "/home/j/esp-idf/components/esp_hw_support/intr_alloc.c", "/home/j/esp-idf/components/esp_hw_support/mac_addr.c", "/home/j/esp-idf/components/esp_hw_support/periph_ctrl.c", "/home/j/esp-idf/components/esp_hw_support/revision.c", "/home/j/esp-idf/components/esp_hw_support/rtc_module.c", "/home/j/esp-idf/components/esp_hw_support/sleep_modes.c", "/home/j/esp-idf/components/esp_hw_support/sleep_gpio.c", "/home/j/esp-idf/components/esp_hw_support/sleep_modem.c", "/home/j/esp-idf/components/esp_hw_support/regi2c_ctrl.c", "/home/j/esp-idf/components/esp_hw_support/esp_gpio_reserve.c", "/home/j/esp-idf/components/esp_hw_support/sar_periph_ctrl_common.c", "/home/j/esp-idf/components/esp_hw_support/port/esp32s3/io_mux.c", "/home/j/esp-idf/components/esp_hw_support/port/esp32s3/esp_clk_tree.c", "/home/j/esp-idf/components/esp_hw_support/port/esp_clk_tree_common.c", "/home/j/esp-idf/components/esp_hw_support/adc_share_hw_ctrl.c", "/home/j/esp-idf/components/esp_hw_support/sleep_cpu.c", "/home/j/esp-idf/components/esp_hw_support/dma/gdma.c", "/home/j/esp-idf/components/esp_hw_support/dma/async_memcpy_impl_gdma.c", "/home/j/esp-idf/components/esp_hw_support/dma/esp_async_memcpy.c", "/home/j/esp-idf/components/esp_hw_support/port/esp32s3/systimer.c", "/home/j/esp-idf/components/esp_hw_support/esp_hmac.c", "/home/j/esp-idf/components/esp_hw_support/esp_ds.c", "/home/j/esp-idf/components/esp_hw_support/mspi_timing_tuning.c", "/home/j/esp-idf/components/esp_hw_support/port/esp32s3/mspi_timing_config.c", "/home/j/esp-idf/components/esp_hw_support/sleep_wake_stub.c", "/home/j/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk.c", "/home/j/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk_init.c", "/home/j/esp-idf/components/esp_hw_support/port/esp32s3/rtc_init.c", "/home/j/esp-idf/components/esp_hw_support/port/esp32s3/rtc_sleep.c", "/home/j/esp-idf/components/esp_hw_support/port/esp32s3/rtc_time.c", "/home/j/esp-idf/components/esp_hw_support/port/esp32s3/chip_info.c", "/home/j/esp-idf/components/esp_hw_support/port/esp32s3/esp_crypto_lock.c", "/home/j/esp-idf/components/esp_hw_support/port/esp32s3/sar_periph_ctrl.c", "/home/j/esp-idf/components/esp_hw_support/port/esp32s3/esp_memprot.c", "/home/j/esp-idf/components/esp_hw_support/port/esp_memprot_conv.c" ],
             "include_dirs": [ "include", "include/soc", "include/soc/esp32s3" ]
         },
@@ -444,7 +444,7 @@
             "priv_reqs": [ "driver", "esp_mm", "esp_psram" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_lcd/libesp_lcd.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_lcd/libesp_lcd.a",
             "sources": [ "/home/j/esp-idf/components/esp_lcd/src/esp_lcd_common.c", "/home/j/esp-idf/components/esp_lcd/src/esp_lcd_panel_io.c", "/home/j/esp-idf/components/esp_lcd/src/esp_lcd_panel_io_i2c.c", "/home/j/esp-idf/components/esp_lcd/src/esp_lcd_panel_io_spi.c", "/home/j/esp-idf/components/esp_lcd/src/esp_lcd_panel_nt35510.c", "/home/j/esp-idf/components/esp_lcd/src/esp_lcd_panel_ssd1306.c", "/home/j/esp-idf/components/esp_lcd/src/esp_lcd_panel_st7789.c", "/home/j/esp-idf/components/esp_lcd/src/esp_lcd_panel_ops.c", "/home/j/esp-idf/components/esp_lcd/src/esp_lcd_panel_io_i80.c", "/home/j/esp-idf/components/esp_lcd/src/esp_lcd_panel_rgb.c" ],
             "include_dirs": [ "include", "interface" ]
         },
@@ -459,7 +459,7 @@
             "priv_reqs": [ "protobuf-c" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_local_ctrl/libesp_local_ctrl.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_local_ctrl/libesp_local_ctrl.a",
             "sources": [ "/home/j/esp-idf/components/esp_local_ctrl/src/esp_local_ctrl.c", "/home/j/esp-idf/components/esp_local_ctrl/src/esp_local_ctrl_handler.c", "/home/j/esp-idf/components/esp_local_ctrl/proto-c/esp_local_ctrl.pb-c.c", "/home/j/esp-idf/components/esp_local_ctrl/src/esp_local_ctrl_transport_httpd.c" ],
             "include_dirs": [ "include" ]
         },
@@ -474,7 +474,7 @@
             "priv_reqs": [ "heap", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_mm/libesp_mm.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_mm/libesp_mm.a",
             "sources": [ "/home/j/esp-idf/components/esp_mm/esp_mmu_map.c", "/home/j/esp-idf/components/esp_mm/port/esp32s3/ext_mem_layout.c", "/home/j/esp-idf/components/esp_mm/esp_cache.c" ],
             "include_dirs": [ "include" ]
         },
@@ -489,7 +489,7 @@
             "priv_reqs": [ "esp_netif_stack" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_netif/libesp_netif.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_netif/libesp_netif.a",
             "sources": [ "/home/j/esp-idf/components/esp_netif/esp_netif_handlers.c", "/home/j/esp-idf/components/esp_netif/esp_netif_objects.c", "/home/j/esp-idf/components/esp_netif/esp_netif_defaults.c", "/home/j/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c", "/home/j/esp-idf/components/esp_netif/lwip/esp_netif_sntp.c", "/home/j/esp-idf/components/esp_netif/lwip/esp_netif_lwip_defaults.c", "/home/j/esp-idf/components/esp_netif/lwip/netif/wlanif.c", "/home/j/esp-idf/components/esp_netif/lwip/netif/ethernetif.c", "/home/j/esp-idf/components/esp_netif/lwip/netif/esp_pbuf_ref.c" ],
             "include_dirs": [ "include" ]
         },
@@ -519,7 +519,7 @@
             "priv_reqs": [ "esp_system", "bootloader_support", "spi_flash", "app_update", "partition_table" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_partition/libesp_partition.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_partition/libesp_partition.a",
             "sources": [ "/home/j/esp-idf/components/esp_partition/partition.c", "/home/j/esp-idf/components/esp_partition/partition_target.c" ],
             "include_dirs": [ "include" ]
         },
@@ -534,7 +534,7 @@
             "priv_reqs": [ "nvs_flash", "driver", "efuse", "esp_timer", "esp_wifi" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_phy/libesp_phy.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_phy/libesp_phy.a",
             "sources": [ "/home/j/esp-idf/components/esp_phy/src/phy_override.c", "/home/j/esp-idf/components/esp_phy/src/lib_printf.c", "/home/j/esp-idf/components/esp_phy/src/phy_common.c", "/home/j/esp-idf/components/esp_phy/src/phy_init.c", "/home/j/esp-idf/components/esp_phy/src/btbb_init.c" ],
             "include_dirs": [ "include", "esp32s3/include" ]
         },
@@ -549,7 +549,7 @@
             "priv_reqs": [ "esp_system", "driver", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_pm/libesp_pm.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_pm/libesp_pm.a",
             "sources": [ "/home/j/esp-idf/components/esp_pm/pm_locks.c", "/home/j/esp-idf/components/esp_pm/pm_trace.c", "/home/j/esp-idf/components/esp_pm/pm_impl.c" ],
             "include_dirs": [ "include" ]
         },
@@ -579,7 +579,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_ringbuf/libesp_ringbuf.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_ringbuf/libesp_ringbuf.a",
             "sources": [ "/home/j/esp-idf/components/esp_ringbuf/ringbuf.c" ],
             "include_dirs": [ "include" ]
         },
@@ -594,7 +594,7 @@
             "priv_reqs": [ "soc", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_rom/libesp_rom.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_rom/libesp_rom.a",
             "sources": [ "/home/j/esp-idf/components/esp_rom/patches/esp_rom_crc.c", "/home/j/esp-idf/components/esp_rom/patches/esp_rom_sys.c", "/home/j/esp-idf/components/esp_rom/patches/esp_rom_uart.c", "/home/j/esp-idf/components/esp_rom/patches/esp_rom_spiflash.c", "/home/j/esp-idf/components/esp_rom/patches/esp_rom_efuse.c", "/home/j/esp-idf/components/esp_rom/patches/esp_rom_longjmp.S", "/home/j/esp-idf/components/esp_rom/patches/esp_rom_systimer.c", "/home/j/esp-idf/components/esp_rom/patches/esp_rom_wdt.c", "/home/j/esp-idf/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c", "/home/j/esp-idf/components/esp_rom/patches/esp_rom_cache_writeback_esp32s3.S" ],
             "include_dirs": [ "include", "include/esp32s3", "esp32s3" ]
         },
@@ -609,7 +609,7 @@
             "priv_reqs": [ "spi_flash", "esp_timer", "esp_mm", "pthread", "bootloader_support", "efuse", "driver", "esp_partition" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_system/libesp_system.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_system/libesp_system.a",
             "sources": [ "/home/j/esp-idf/components/esp_system/esp_err.c", "/home/j/esp-idf/components/esp_system/crosscore_int.c", "/home/j/esp-idf/components/esp_system/esp_ipc.c", "/home/j/esp-idf/components/esp_system/freertos_hooks.c", "/home/j/esp-idf/components/esp_system/int_wdt.c", "/home/j/esp-idf/components/esp_system/panic.c", "/home/j/esp-idf/components/esp_system/esp_system.c", "/home/j/esp-idf/components/esp_system/startup.c", "/home/j/esp-idf/components/esp_system/system_time.c", "/home/j/esp-idf/components/esp_system/stack_check.c", "/home/j/esp-idf/components/esp_system/ubsan.c", "/home/j/esp-idf/components/esp_system/xt_wdt.c", "/home/j/esp-idf/components/esp_system/debug_stubs.c", "/home/j/esp-idf/components/esp_system/port/cpu_start.c", "/home/j/esp-idf/components/esp_system/port/panic_handler.c", "/home/j/esp-idf/components/esp_system/port/esp_system_chip.c", "/home/j/esp-idf/components/esp_system/port/brownout.c", "/home/j/esp-idf/components/esp_system/port/soc/esp32s3/highint_hdl.S", "/home/j/esp-idf/components/esp_system/port/soc/esp32s3/clk.c", "/home/j/esp-idf/components/esp_system/port/soc/esp32s3/reset_reason.c", "/home/j/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c", "/home/j/esp-idf/components/esp_system/port/soc/esp32s3/cache_err_int.c", "/home/j/esp-idf/components/esp_system/port/soc/esp32s3/apb_backup_dma.c", "/home/j/esp-idf/components/esp_system/port/arch/xtensa/panic_arch.c", "/home/j/esp-idf/components/esp_system/port/arch/xtensa/panic_handler_asm.S", "/home/j/esp-idf/components/esp_system/port/arch/xtensa/expression_with_stack.c", "/home/j/esp-idf/components/esp_system/port/arch/xtensa/expression_with_stack_asm.S", "/home/j/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c", "/home/j/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers_asm.S", "/home/j/esp-idf/components/esp_system/port/arch/xtensa/debug_stubs.c", "/home/j/esp-idf/components/esp_system/port/arch/xtensa/trax.c", "/home/j/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr.c", "/home/j/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_handler.S", "/home/j/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_routines.S" ],
             "include_dirs": [ "include" ]
         },
@@ -624,7 +624,7 @@
             "priv_reqs": [ "soc", "driver" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_timer/libesp_timer.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_timer/libesp_timer.a",
             "sources": [ "/home/j/esp-idf/components/esp_timer/src/esp_timer.c", "/home/j/esp-idf/components/esp_timer/src/ets_timer_legacy.c", "/home/j/esp-idf/components/esp_timer/src/system_time.c", "/home/j/esp-idf/components/esp_timer/src/esp_timer_impl_common.c", "/home/j/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c" ],
             "include_dirs": [ "include" ]
         },
@@ -639,7 +639,7 @@
             "priv_reqs": [ "driver", "esptool_py", "esp_pm", "esp_timer", "nvs_flash", "wpa_supplicant", "hal", "lwip", "esp_coex" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/esp_wifi/libesp_wifi.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/esp_wifi/libesp_wifi.a",
             "sources": [ "/home/j/esp-idf/components/esp_wifi/src/mesh_event.c", "/home/j/esp-idf/components/esp_wifi/src/smartconfig.c", "/home/j/esp-idf/components/esp_wifi/src/wifi_init.c", "/home/j/esp-idf/components/esp_wifi/src/wifi_default.c", "/home/j/esp-idf/components/esp_wifi/src/wifi_netif.c", "/home/j/esp-idf/components/esp_wifi/src/wifi_default_ap.c", "/home/j/esp-idf/components/esp_wifi/esp32s3/esp_adapter.c", "/home/j/esp-idf/components/esp_wifi/src/smartconfig_ack.c" ],
             "include_dirs": [ "include", "wifi_apps/include" ]
         },
@@ -654,7 +654,7 @@
             "priv_reqs": [ "esp_partition", "spi_flash", "bootloader_support", "mbedtls", "esp_rom", "soc", "esp_system", "driver" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/espcoredump/libespcoredump.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/espcoredump/libespcoredump.a",
             "sources": [ "/home/j/esp-idf/components/espcoredump/src/core_dump_common.c", "/home/j/esp-idf/components/espcoredump/src/core_dump_checksum.c", "/home/j/esp-idf/components/espcoredump/src/core_dump_flash.c", "/home/j/esp-idf/components/espcoredump/src/core_dump_uart.c", "/home/j/esp-idf/components/espcoredump/src/core_dump_elf.c", "/home/j/esp-idf/components/espcoredump/src/core_dump_binary.c", "/home/j/esp-idf/components/espcoredump/src/port/xtensa/core_dump_port.c" ],
             "include_dirs": [ "include", "include/port/xtensa" ]
         },
@@ -662,15 +662,15 @@
             "alias": "idf::espressif__esp_jpeg",
             "target": "___idf_espressif__esp_jpeg",
             "prefix": "idf",
-            "dir": "/home/j/Downloads/DoingTV/managed_components/espressif__esp_jpeg",
+            "dir": "/home/j/DoingObject/DoingTV/managed_components/espressif__esp_jpeg",
             "type": "LIBRARY",
             "lib": "__idf_espressif__esp_jpeg",
             "reqs": [],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/espressif__esp_jpeg/libespressif__esp_jpeg.a",
-            "sources": [ "/home/j/Downloads/DoingTV/managed_components/espressif__esp_jpeg/jpeg_decoder.c" ],
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/espressif__esp_jpeg/libespressif__esp_jpeg.a",
+            "sources": [ "/home/j/DoingObject/DoingTV/managed_components/espressif__esp_jpeg/jpeg_decoder.c" ],
             "include_dirs": [ "include" ]
         },
         "esptool_py": {
@@ -699,7 +699,7 @@
             "priv_reqs": [ "vfs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/fatfs/libfatfs.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/fatfs/libfatfs.a",
             "sources": [ "/home/j/esp-idf/components/fatfs/diskio/diskio.c", "/home/j/esp-idf/components/fatfs/diskio/diskio_rawflash.c", "/home/j/esp-idf/components/fatfs/diskio/diskio_sdmmc.c", "/home/j/esp-idf/components/fatfs/diskio/diskio_wl.c", "/home/j/esp-idf/components/fatfs/src/ff.c", "/home/j/esp-idf/components/fatfs/port/freertos/ffsystem.c", "/home/j/esp-idf/components/fatfs/src/ffunicode.c", "/home/j/esp-idf/components/fatfs/vfs/vfs_fat.c", "/home/j/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c", "/home/j/esp-idf/components/fatfs/vfs/vfs_fat_spiflash.c" ],
             "include_dirs": [ "diskio", "vfs", "src" ]
         },
@@ -714,7 +714,7 @@
             "priv_reqs": [ "soc", "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/freertos/libfreertos.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/freertos/libfreertos.a",
             "sources": [ "/home/j/esp-idf/components/freertos/heap_idf.c", "/home/j/esp-idf/components/freertos/esp_additions/idf_additions.c", "/home/j/esp-idf/components/freertos/FreeRTOS-Kernel/list.c", "/home/j/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c", "/home/j/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c", "/home/j/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c", "/home/j/esp-idf/components/freertos/FreeRTOS-Kernel/croutine.c", "/home/j/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c", "/home/j/esp-idf/components/freertos/FreeRTOS-Kernel/stream_buffer.c", "/home/j/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c", "/home/j/esp-idf/components/freertos/app_startup.c", "/home/j/esp-idf/components/freertos/FreeRTOS-openocd.c", "/home/j/esp-idf/components/freertos/port_common.c", "/home/j/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S", "/home/j/esp-idf/components/freertos/FreeRTOS-Kernel/portable/port_systick.c", "/home/j/esp-idf/components/freertos/esp_additions/freertos_v8_compat.c", "/home/j/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_context.S", "/home/j/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_init.c", "/home/j/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_overlay_os_hook.c", "/home/j/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S" ],
             "include_dirs": [ "FreeRTOS-Kernel/include", "FreeRTOS-Kernel/portable/xtensa/include", "esp_additions/include/freertos", "esp_additions/include", "esp_additions/arch/xtensa/include" ]
         },
@@ -729,7 +729,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/hal/libhal.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/hal/libhal.a",
             "sources": [ "/home/j/esp-idf/components/hal/mpu_hal.c", "/home/j/esp-idf/components/hal/efuse_hal.c", "/home/j/esp-idf/components/hal/esp32s3/efuse_hal.c", "/home/j/esp-idf/components/hal/mmu_hal.c", "/home/j/esp-idf/components/hal/cache_hal.c", "/home/j/esp-idf/components/hal/rtc_io_hal.c", "/home/j/esp-idf/components/hal/gpio_hal.c", "/home/j/esp-idf/components/hal/uart_hal.c", "/home/j/esp-idf/components/hal/uart_hal_iram.c", "/home/j/esp-idf/components/hal/adc_hal_common.c", "/home/j/esp-idf/components/hal/adc_oneshot_hal.c", "/home/j/esp-idf/components/hal/esp32s3/clk_tree_hal.c", "/home/j/esp-idf/components/hal/spi_flash_hal.c", "/home/j/esp-idf/components/hal/spi_flash_hal_iram.c", "/home/j/esp-idf/components/hal/spi_flash_encrypt_hal_iram.c", "/home/j/esp-idf/components/hal/systimer_hal.c", "/home/j/esp-idf/components/hal/timer_hal.c", "/home/j/esp-idf/components/hal/ledc_hal.c", "/home/j/esp-idf/components/hal/ledc_hal_iram.c", "/home/j/esp-idf/components/hal/i2c_hal.c", "/home/j/esp-idf/components/hal/i2c_hal_iram.c", "/home/j/esp-idf/components/hal/rmt_hal.c", "/home/j/esp-idf/components/hal/pcnt_hal.c", "/home/j/esp-idf/components/hal/mcpwm_hal.c", "/home/j/esp-idf/components/hal/twai_hal.c", "/home/j/esp-idf/components/hal/twai_hal_iram.c", "/home/j/esp-idf/components/hal/gdma_hal.c", "/home/j/esp-idf/components/hal/i2s_hal.c", "/home/j/esp-idf/components/hal/sdm_hal.c", "/home/j/esp-idf/components/hal/adc_hal.c", "/home/j/esp-idf/components/hal/lcd_hal.c", "/home/j/esp-idf/components/hal/sha_hal.c", "/home/j/esp-idf/components/hal/aes_hal.c", "/home/j/esp-idf/components/hal/brownout_hal.c", "/home/j/esp-idf/components/hal/spi_hal.c", "/home/j/esp-idf/components/hal/spi_hal_iram.c", "/home/j/esp-idf/components/hal/spi_slave_hal.c", "/home/j/esp-idf/components/hal/spi_slave_hal_iram.c", "/home/j/esp-idf/components/hal/spi_slave_hd_hal.c", "/home/j/esp-idf/components/hal/hmac_hal.c", "/home/j/esp-idf/components/hal/ds_hal.c", "/home/j/esp-idf/components/hal/spi_flash_hal_gpspi.c", "/home/j/esp-idf/components/hal/touch_sensor_hal.c", "/home/j/esp-idf/components/hal/usb_hal.c", "/home/j/esp-idf/components/hal/usb_phy_hal.c", "/home/j/esp-idf/components/hal/xt_wdt_hal.c", "/home/j/esp-idf/components/hal/esp32s3/touch_sensor_hal.c", "/home/j/esp-idf/components/hal/esp32s3/rtc_cntl_hal.c", "/home/j/esp-idf/components/hal/usb_dwc_hal.c" ],
             "include_dirs": [ "esp32s3/include", "include", "platform_port/include" ]
         },
@@ -744,7 +744,7 @@
             "priv_reqs": [ "soc" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/heap/libheap.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/heap/libheap.a",
             "sources": [ "/home/j/esp-idf/components/heap/heap_caps.c", "/home/j/esp-idf/components/heap/heap_caps_init.c", "/home/j/esp-idf/components/heap/multi_heap.c", "/home/j/esp-idf/components/heap/tlsf/tlsf.c", "/home/j/esp-idf/components/heap/port/memory_layout_utils.c", "/home/j/esp-idf/components/heap/port/esp32s3/memory_layout.c" ],
             "include_dirs": [ "include" ]
         },
@@ -759,7 +759,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/http_parser/libhttp_parser.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/http_parser/libhttp_parser.a",
             "sources": [ "/home/j/esp-idf/components/http_parser/http_parser.c" ],
             "include_dirs": [ "." ]
         },
@@ -804,7 +804,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/json/libjson.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/json/libjson.a",
             "sources": [ "/home/j/esp-idf/components/json/cJSON/cJSON.c", "/home/j/esp-idf/components/json/cJSON/cJSON_Utils.c" ],
             "include_dirs": [ "cJSON" ]
         },
@@ -819,7 +819,7 @@
             "priv_reqs": [ "soc", "hal", "esp_hw_support" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/log/liblog.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/log/liblog.a",
             "sources": [ "/home/j/esp-idf/components/log/log.c", "/home/j/esp-idf/components/log/log_buffers.c", "/home/j/esp-idf/components/log/log_freertos.c" ],
             "include_dirs": [ "include" ]
         },
@@ -834,7 +834,7 @@
             "priv_reqs": [ "vfs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/lwip/liblwip.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/lwip/liblwip.a",
             "sources": [ "/home/j/esp-idf/components/lwip/apps/sntp/sntp.c", "/home/j/esp-idf/components/lwip/lwip/src/api/api_lib.c", "/home/j/esp-idf/components/lwip/lwip/src/api/api_msg.c", "/home/j/esp-idf/components/lwip/lwip/src/api/err.c", "/home/j/esp-idf/components/lwip/lwip/src/api/if_api.c", "/home/j/esp-idf/components/lwip/lwip/src/api/netbuf.c", "/home/j/esp-idf/components/lwip/lwip/src/api/netdb.c", "/home/j/esp-idf/components/lwip/lwip/src/api/netifapi.c", "/home/j/esp-idf/components/lwip/lwip/src/api/sockets.c", "/home/j/esp-idf/components/lwip/lwip/src/api/tcpip.c", "/home/j/esp-idf/components/lwip/lwip/src/apps/sntp/sntp.c", "/home/j/esp-idf/components/lwip/lwip/src/apps/netbiosns/netbiosns.c", "/home/j/esp-idf/components/lwip/lwip/src/core/def.c", "/home/j/esp-idf/components/lwip/lwip/src/core/dns.c", "/home/j/esp-idf/components/lwip/lwip/src/core/inet_chksum.c", "/home/j/esp-idf/components/lwip/lwip/src/core/init.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ip.c", "/home/j/esp-idf/components/lwip/lwip/src/core/mem.c", "/home/j/esp-idf/components/lwip/lwip/src/core/memp.c", "/home/j/esp-idf/components/lwip/lwip/src/core/netif.c", "/home/j/esp-idf/components/lwip/lwip/src/core/pbuf.c", "/home/j/esp-idf/components/lwip/lwip/src/core/raw.c", "/home/j/esp-idf/components/lwip/lwip/src/core/stats.c", "/home/j/esp-idf/components/lwip/lwip/src/core/sys.c", "/home/j/esp-idf/components/lwip/lwip/src/core/tcp.c", "/home/j/esp-idf/components/lwip/lwip/src/core/tcp_in.c", "/home/j/esp-idf/components/lwip/lwip/src/core/tcp_out.c", "/home/j/esp-idf/components/lwip/lwip/src/core/timeouts.c", "/home/j/esp-idf/components/lwip/lwip/src/core/udp.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv4/autoip.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv4/dhcp.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv4/etharp.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv4/icmp.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv4/igmp.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv4/ip4.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv4/ip4_napt.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv4/ip4_addr.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv4/ip4_frag.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv6/dhcp6.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv6/ethip6.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv6/icmp6.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv6/inet6.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv6/ip6.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv6/ip6_addr.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv6/ip6_frag.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv6/mld6.c", "/home/j/esp-idf/components/lwip/lwip/src/core/ipv6/nd6.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ethernet.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/bridgeif.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/bridgeif_fdb.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/slipif.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/auth.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/ccp.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/chap-md5.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/chap-new.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/chap_ms.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/demand.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/eap.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/ecp.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/eui64.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/fsm.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/ipcp.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/ipv6cp.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/lcp.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/magic.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/mppe.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/multilink.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/ppp.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/pppapi.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/pppcrypt.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/pppoe.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/pppol2tp.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/pppos.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/upap.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/utils.c", "/home/j/esp-idf/components/lwip/lwip/src/netif/ppp/vj.c", "/home/j/esp-idf/components/lwip/port/hooks/tcp_isn_default.c", "/home/j/esp-idf/components/lwip/port/hooks/lwip_default_hooks.c", "/home/j/esp-idf/components/lwip/port/debug/lwip_debug.c", "/home/j/esp-idf/components/lwip/port/sockets_ext.c", "/home/j/esp-idf/components/lwip/port/freertos/sys_arch.c", "/home/j/esp-idf/components/lwip/port/esp32xx/vfs_lwip.c", "/home/j/esp-idf/components/lwip/apps/ping/esp_ping.c", "/home/j/esp-idf/components/lwip/apps/ping/ping.c", "/home/j/esp-idf/components/lwip/apps/ping/ping_sock.c", "/home/j/esp-idf/components/lwip/apps/dhcpserver/dhcpserver.c" ],
             "include_dirs": [ "include", "include/apps", "include/apps/sntp", "lwip/src/include", "port/include", "port/freertos/include/", "port/esp32xx/include", "port/esp32xx/include/arch" ]
         },
@@ -842,15 +842,15 @@
             "alias": "idf::main",
             "target": "___idf_main",
             "prefix": "idf",
-            "dir": "/home/j/Downloads/DoingTV/main",
+            "dir": "/home/j/DoingObject/DoingTV/main",
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
             "priv_reqs": [ "espressif__esp_jpeg" ],
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__esp_jpeg" ],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/j/Downloads/DoingTV/main/main.c", "/home/j/Downloads/DoingTV/main/file_server.c", "/home/j/Downloads/DoingTV/main/mount.c", "/home/j/Downloads/DoingTV/build/favicon.ico.S", "/home/j/Downloads/DoingTV/build/upload_script.html.S" ],
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/main/libmain.a",
+            "sources": [ "/home/j/DoingObject/DoingTV/main/main.c", "/home/j/DoingObject/DoingTV/main/file_server.c", "/home/j/DoingObject/DoingTV/main/mount.c", "/home/j/DoingObject/DoingTV/build/favicon.ico.S", "/home/j/DoingObject/DoingTV/build/upload_script.html.S" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
@@ -864,8 +864,8 @@
             "priv_reqs": [ "soc", "esp_hw_support", "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/mbedtls/libmbedtls.a",
-            "sources": [ "/home/j/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c", "/home/j/Downloads/DoingTV/build/x509_crt_bundle.S" ],
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/mbedtls/libmbedtls.a",
+            "sources": [ "/home/j/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c", "/home/j/DoingObject/DoingTV/build/x509_crt_bundle.S" ],
             "include_dirs": [ "port/include", "mbedtls/include", "mbedtls/library", "esp_crt_bundle/include" ]
         },
         "mqtt": {
@@ -879,7 +879,7 @@
             "priv_reqs": [ "esp_timer", "http_parser", "esp_hw_support", "heap" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/mqtt/libmqtt.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/mqtt/libmqtt.a",
             "sources": [ "/home/j/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c", "/home/j/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_msg.c", "/home/j/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_outbox.c", "/home/j/esp-idf/components/mqtt/esp-mqtt/lib/platform_esp32_idf.c" ],
             "include_dirs": [ "/home/j/esp-idf/components/mqtt/esp-mqtt/include" ]
         },
@@ -894,7 +894,7 @@
             "priv_reqs": [ "soc", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/newlib/libnewlib.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/newlib/libnewlib.a",
             "sources": [ "/home/j/esp-idf/components/newlib/abort.c", "/home/j/esp-idf/components/newlib/assert.c", "/home/j/esp-idf/components/newlib/heap.c", "/home/j/esp-idf/components/newlib/locks.c", "/home/j/esp-idf/components/newlib/poll.c", "/home/j/esp-idf/components/newlib/pthread.c", "/home/j/esp-idf/components/newlib/random.c", "/home/j/esp-idf/components/newlib/reent_init.c", "/home/j/esp-idf/components/newlib/newlib_init.c", "/home/j/esp-idf/components/newlib/syscalls.c", "/home/j/esp-idf/components/newlib/termios.c", "/home/j/esp-idf/components/newlib/stdatomic.c", "/home/j/esp-idf/components/newlib/time.c", "/home/j/esp-idf/components/newlib/sysconf.c", "/home/j/esp-idf/components/newlib/realpath.c", "/home/j/esp-idf/components/newlib/port/esp_time_impl.c" ],
             "include_dirs": [ "platform_include" ]
         },
@@ -909,7 +909,7 @@
             "priv_reqs": [ "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/nvs_flash/libnvs_flash.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/nvs_flash/libnvs_flash.a",
             "sources": [ "/home/j/esp-idf/components/nvs_flash/src/nvs_api.cpp", "/home/j/esp-idf/components/nvs_flash/src/nvs_cxx_api.cpp", "/home/j/esp-idf/components/nvs_flash/src/nvs_item_hash_list.cpp", "/home/j/esp-idf/components/nvs_flash/src/nvs_page.cpp", "/home/j/esp-idf/components/nvs_flash/src/nvs_pagemanager.cpp", "/home/j/esp-idf/components/nvs_flash/src/nvs_storage.cpp", "/home/j/esp-idf/components/nvs_flash/src/nvs_handle_simple.cpp", "/home/j/esp-idf/components/nvs_flash/src/nvs_handle_locked.cpp", "/home/j/esp-idf/components/nvs_flash/src/nvs_partition.cpp", "/home/j/esp-idf/components/nvs_flash/src/nvs_partition_lookup.cpp", "/home/j/esp-idf/components/nvs_flash/src/nvs_partition_manager.cpp", "/home/j/esp-idf/components/nvs_flash/src/nvs_types.cpp" ],
             "include_dirs": [ "include", "../spi_flash/include" ]
         },
@@ -954,7 +954,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/perfmon/libperfmon.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/perfmon/libperfmon.a",
             "sources": [ "/home/j/esp-idf/components/perfmon/xtensa_perfmon_access.c", "/home/j/esp-idf/components/perfmon/xtensa_perfmon_apis.c", "/home/j/esp-idf/components/perfmon/xtensa_perfmon_masks.c" ],
             "include_dirs": [ "include" ]
         },
@@ -962,30 +962,30 @@
             "alias": "idf::pngle",
             "target": "___idf_pngle",
             "prefix": "idf",
-            "dir": "/home/j/Downloads/DoingTV/components/pngle",
+            "dir": "/home/j/DoingObject/DoingTV/components/pngle",
             "type": "LIBRARY",
             "lib": "__idf_pngle",
             "reqs": [],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/pngle/libpngle.a",
-            "sources": [ "/home/j/Downloads/DoingTV/components/pngle/pngle.c" ],
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/pngle/libpngle.a",
+            "sources": [ "/home/j/DoingObject/DoingTV/components/pngle/pngle.c" ],
             "include_dirs": [ "include" ]
         },
         "power_button": {
             "alias": "idf::power_button",
             "target": "___idf_power_button",
             "prefix": "idf",
-            "dir": "/home/j/Downloads/DoingTV/components/power_button",
+            "dir": "/home/j/DoingObject/DoingTV/components/power_button",
             "type": "LIBRARY",
             "lib": "__idf_power_button",
             "reqs": [ "driver", "esp_timer" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/power_button/libpower_button.a",
-            "sources": [ "/home/j/Downloads/DoingTV/components/power_button/power_button.c" ],
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/power_button/libpower_button.a",
+            "sources": [ "/home/j/DoingObject/DoingTV/components/power_button/power_button.c" ],
             "include_dirs": [ "include" ]
         },
         "protobuf-c": {
@@ -999,7 +999,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/protobuf-c/libprotobuf-c.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/protobuf-c/libprotobuf-c.a",
             "sources": [ "/home/j/esp-idf/components/protobuf-c/protobuf-c/protobuf-c/protobuf-c.c" ],
             "include_dirs": [ "protobuf-c" ]
         },
@@ -1014,7 +1014,7 @@
             "priv_reqs": [ "esp_netif", "driver", "esp_wifi", "vfs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/protocol_examples_common/libprotocol_examples_common.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/protocol_examples_common/libprotocol_examples_common.a",
             "sources": [ "/home/j/esp-idf/examples/common_components/protocol_examples_common/stdin_out.c", "/home/j/esp-idf/examples/common_components/protocol_examples_common/addr_from_stdin.c", "/home/j/esp-idf/examples/common_components/protocol_examples_common/connect.c", "/home/j/esp-idf/examples/common_components/protocol_examples_common/wifi_connect.c", "/home/j/esp-idf/examples/common_components/protocol_examples_common/protocol_examples_utils.c", "/home/j/esp-idf/examples/common_components/protocol_examples_common/console_cmd.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1029,8 +1029,8 @@
             "priv_reqs": [ "protobuf-c", "mbedtls", "console", "esp_http_server", "driver" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/protocomm/libprotocomm.a",
-            "sources": [ "/home/j/esp-idf/components/protocomm/src/common/protocomm.c", "/home/j/esp-idf/components/protocomm/proto-c/constants.pb-c.c", "/home/j/esp-idf/components/protocomm/proto-c/sec0.pb-c.c", "/home/j/esp-idf/components/protocomm/proto-c/sec1.pb-c.c", "/home/j/esp-idf/components/protocomm/proto-c/sec2.pb-c.c", "/home/j/esp-idf/components/protocomm/proto-c/session.pb-c.c", "/home/j/esp-idf/components/protocomm/src/transports/protocomm_console.c", "/home/j/esp-idf/components/protocomm/src/transports/protocomm_httpd.c", "/home/j/esp-idf/components/protocomm/src/security/security0.c", "/home/j/esp-idf/components/protocomm/src/security/security1.c", "/home/j/esp-idf/components/protocomm/src/security/security2.c", "/home/j/esp-idf/components/protocomm/src/crypto/srp6a/esp_srp.c", "/home/j/esp-idf/components/protocomm/src/crypto/srp6a/esp_srp_mpi.c" ],
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/protocomm/libprotocomm.a",
+            "sources": [ "/home/j/esp-idf/components/protocomm/src/common/protocomm.c", "/home/j/esp-idf/components/protocomm/proto-c/constants.pb-c.c", "/home/j/esp-idf/components/protocomm/proto-c/sec0.pb-c.c", "/home/j/esp-idf/components/protocomm/proto-c/sec1.pb-c.c", "/home/j/esp-idf/components/protocomm/proto-c/sec2.pb-c.c", "/home/j/esp-idf/components/protocomm/proto-c/session.pb-c.c", "/home/j/esp-idf/components/protocomm/src/transports/protocomm_console.c", "/home/j/esp-idf/components/protocomm/src/transports/protocomm_httpd.c", "/home/j/esp-idf/components/protocomm/src/security/security0.c", "/home/j/esp-idf/components/protocomm/src/security/security1.c", "/home/j/esp-idf/components/protocomm/src/security/security2.c", "/home/j/esp-idf/components/protocomm/src/crypto/srp6a/esp_srp.c", "/home/j/esp-idf/components/protocomm/src/crypto/srp6a/esp_srp_mpi.c", "/home/j/esp-idf/components/protocomm/src/transports/protocomm_nimble.c" ],
             "include_dirs": [ "include/common", "include/security", "include/transports" ]
         },
         "pthread": {
@@ -1044,7 +1044,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/pthread/libpthread.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/pthread/libpthread.a",
             "sources": [ "/home/j/esp-idf/components/pthread/pthread.c", "/home/j/esp-idf/components/pthread/pthread_cond_var.c", "/home/j/esp-idf/components/pthread/pthread_local_storage.c", "/home/j/esp-idf/components/pthread/pthread_rwlock.c", "/home/j/esp-idf/components/pthread/pthread_semaphore.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1059,7 +1059,7 @@
             "priv_reqs": [ "soc", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/sdmmc/libsdmmc.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/sdmmc/libsdmmc.a",
             "sources": [ "/home/j/esp-idf/components/sdmmc/sdmmc_cmd.c", "/home/j/esp-idf/components/sdmmc/sdmmc_common.c", "/home/j/esp-idf/components/sdmmc/sdmmc_init.c", "/home/j/esp-idf/components/sdmmc/sdmmc_io.c", "/home/j/esp-idf/components/sdmmc/sdmmc_mmc.c", "/home/j/esp-idf/components/sdmmc/sdmmc_sd.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1074,7 +1074,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/soc/libsoc.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/soc/libsoc.a",
             "sources": [ "/home/j/esp-idf/components/soc/lldesc.c", "/home/j/esp-idf/components/soc/dport_access_common.c", "/home/j/esp-idf/components/soc/esp32s3/interrupts.c", "/home/j/esp-idf/components/soc/esp32s3/gpio_periph.c", "/home/j/esp-idf/components/soc/esp32s3/uart_periph.c", "/home/j/esp-idf/components/soc/esp32s3/adc_periph.c", "/home/j/esp-idf/components/soc/esp32s3/dedic_gpio_periph.c", "/home/j/esp-idf/components/soc/esp32s3/gdma_periph.c", "/home/j/esp-idf/components/soc/esp32s3/spi_periph.c", "/home/j/esp-idf/components/soc/esp32s3/ledc_periph.c", "/home/j/esp-idf/components/soc/esp32s3/pcnt_periph.c", "/home/j/esp-idf/components/soc/esp32s3/rmt_periph.c", "/home/j/esp-idf/components/soc/esp32s3/sdm_periph.c", "/home/j/esp-idf/components/soc/esp32s3/i2s_periph.c", "/home/j/esp-idf/components/soc/esp32s3/i2c_periph.c", "/home/j/esp-idf/components/soc/esp32s3/temperature_sensor_periph.c", "/home/j/esp-idf/components/soc/esp32s3/timer_periph.c", "/home/j/esp-idf/components/soc/esp32s3/lcd_periph.c", "/home/j/esp-idf/components/soc/esp32s3/mcpwm_periph.c", "/home/j/esp-idf/components/soc/esp32s3/sdmmc_periph.c", "/home/j/esp-idf/components/soc/esp32s3/touch_sensor_periph.c", "/home/j/esp-idf/components/soc/esp32s3/twai_periph.c", "/home/j/esp-idf/components/soc/esp32s3/usb_periph.c", "/home/j/esp-idf/components/soc/esp32s3/usb_otg_periph.c", "/home/j/esp-idf/components/soc/esp32s3/rtc_io_periph.c" ],
             "include_dirs": [ "include", "esp32s3", "esp32s3/include" ]
         },
@@ -1089,7 +1089,7 @@
             "priv_reqs": [ "bootloader_support", "app_update", "soc", "driver", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/spi_flash/libspi_flash.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/spi_flash/libspi_flash.a",
             "sources": [ "/home/j/esp-idf/components/spi_flash/flash_brownout_hook.c", "/home/j/esp-idf/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c", "/home/j/esp-idf/components/spi_flash/spi_flash_hpm_enable.c", "/home/j/esp-idf/components/spi_flash/spi_flash_chip_drivers.c", "/home/j/esp-idf/components/spi_flash/spi_flash_chip_generic.c", "/home/j/esp-idf/components/spi_flash/spi_flash_chip_issi.c", "/home/j/esp-idf/components/spi_flash/spi_flash_chip_mxic.c", "/home/j/esp-idf/components/spi_flash/spi_flash_chip_gd.c", "/home/j/esp-idf/components/spi_flash/spi_flash_chip_winbond.c", "/home/j/esp-idf/components/spi_flash/spi_flash_chip_boya.c", "/home/j/esp-idf/components/spi_flash/spi_flash_chip_mxic_opi.c", "/home/j/esp-idf/components/spi_flash/spi_flash_chip_th.c", "/home/j/esp-idf/components/spi_flash/memspi_host_driver.c", "/home/j/esp-idf/components/spi_flash/cache_utils.c", "/home/j/esp-idf/components/spi_flash/flash_mmap.c", "/home/j/esp-idf/components/spi_flash/flash_ops.c", "/home/j/esp-idf/components/spi_flash/spi_flash_wrap.c", "/home/j/esp-idf/components/spi_flash/esp_flash_api.c", "/home/j/esp-idf/components/spi_flash/esp_flash_spi_init.c", "/home/j/esp-idf/components/spi_flash/spi_flash_os_func_app.c", "/home/j/esp-idf/components/spi_flash/spi_flash_os_func_noos.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1104,7 +1104,7 @@
             "priv_reqs": [ "bootloader_support", "esptool_py", "vfs", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/spiffs/libspiffs.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/spiffs/libspiffs.a",
             "sources": [ "/home/j/esp-idf/components/spiffs/spiffs_api.c", "/home/j/esp-idf/components/spiffs/spiffs/src/spiffs_cache.c", "/home/j/esp-idf/components/spiffs/spiffs/src/spiffs_check.c", "/home/j/esp-idf/components/spiffs/spiffs/src/spiffs_gc.c", "/home/j/esp-idf/components/spiffs/spiffs/src/spiffs_hydrogen.c", "/home/j/esp-idf/components/spiffs/spiffs/src/spiffs_nucleus.c", "/home/j/esp-idf/components/spiffs/esp_spiffs.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1112,15 +1112,15 @@
             "alias": "idf::st7789",
             "target": "___idf_st7789",
             "prefix": "idf",
-            "dir": "/home/j/Downloads/DoingTV/components/st7789",
+            "dir": "/home/j/DoingObject/DoingTV/components/st7789",
             "type": "LIBRARY",
             "lib": "__idf_st7789",
             "reqs": [],
             "priv_reqs": [ "driver" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/st7789/libst7789.a",
-            "sources": [ "/home/j/Downloads/DoingTV/components/st7789/st7789.c", "/home/j/Downloads/DoingTV/components/st7789/fontx.c" ],
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/st7789/libst7789.a",
+            "sources": [ "/home/j/DoingObject/DoingTV/components/st7789/st7789.c", "/home/j/DoingObject/DoingTV/components/st7789/fontx.c" ],
             "include_dirs": [ "include" ]
         },
         "tcp_transport": {
@@ -1134,7 +1134,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/tcp_transport/libtcp_transport.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/tcp_transport/libtcp_transport.a",
             "sources": [ "/home/j/esp-idf/components/tcp_transport/transport.c", "/home/j/esp-idf/components/tcp_transport/transport_ssl.c", "/home/j/esp-idf/components/tcp_transport/transport_internal.c", "/home/j/esp-idf/components/tcp_transport/transport_socks_proxy.c", "/home/j/esp-idf/components/tcp_transport/transport_ws.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1149,7 +1149,7 @@
             "priv_reqs": [ "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/touch_element/libtouch_element.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/touch_element/libtouch_element.a",
             "sources": [ "/home/j/esp-idf/components/touch_element/touch_element.c", "/home/j/esp-idf/components/touch_element/touch_button.c", "/home/j/esp-idf/components/touch_element/touch_slider.c", "/home/j/esp-idf/components/touch_element/touch_matrix.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1164,7 +1164,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/ulp/libulp.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/ulp/libulp.a",
             "sources": [ "/home/j/esp-idf/components/ulp/ulp_common/ulp_common.c", "/home/j/esp-idf/components/ulp/ulp_common/ulp_adc.c" ],
             "include_dirs": [ "ulp_common/include", "ulp_common/include/esp32s3" ]
         },
@@ -1179,7 +1179,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/unity/libunity.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/unity/libunity.a",
             "sources": [ "/home/j/esp-idf/components/unity/unity/src/unity.c", "/home/j/esp-idf/components/unity/unity_runner.c", "/home/j/esp-idf/components/unity/unity_utils_freertos.c", "/home/j/esp-idf/components/unity/unity_utils_cache.c", "/home/j/esp-idf/components/unity/unity_utils_memory.c", "/home/j/esp-idf/components/unity/unity_port_esp32.c", "/home/j/esp-idf/components/unity/port/esp/unity_utils_memory_esp.c" ],
             "include_dirs": [ "include", "unity/src" ]
         },
@@ -1194,7 +1194,7 @@
             "priv_reqs": [ "driver" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/usb/libusb.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/usb/libusb.a",
             "sources": [ "/home/j/esp-idf/components/usb/hcd_dwc.c", "/home/j/esp-idf/components/usb/hub.c", "/home/j/esp-idf/components/usb/usb_helpers.c", "/home/j/esp-idf/components/usb/usb_host.c", "/home/j/esp-idf/components/usb/usb_private.c", "/home/j/esp-idf/components/usb/usbh.c", "/home/j/esp-idf/components/usb/usb_phy.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1209,7 +1209,7 @@
             "priv_reqs": [ "driver", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/vfs/libvfs.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/vfs/libvfs.a",
             "sources": [ "/home/j/esp-idf/components/vfs/vfs.c", "/home/j/esp-idf/components/vfs/vfs_eventfd.c", "/home/j/esp-idf/components/vfs/vfs_uart.c", "/home/j/esp-idf/components/vfs/vfs_semihost.c", "/home/j/esp-idf/components/vfs/vfs_console.c", "/home/j/esp-idf/components/vfs/vfs_usb_serial_jtag.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1224,8 +1224,23 @@
             "priv_reqs": [ "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/wear_levelling/libwear_levelling.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/wear_levelling/libwear_levelling.a",
             "sources": [ "/home/j/esp-idf/components/wear_levelling/Partition.cpp", "/home/j/esp-idf/components/wear_levelling/SPI_Flash.cpp", "/home/j/esp-idf/components/wear_levelling/WL_Ext_Perf.cpp", "/home/j/esp-idf/components/wear_levelling/WL_Ext_Safe.cpp", "/home/j/esp-idf/components/wear_levelling/WL_Flash.cpp", "/home/j/esp-idf/components/wear_levelling/crc32.cpp", "/home/j/esp-idf/components/wear_levelling/wear_levelling.cpp" ],
+            "include_dirs": [ "include" ]
+        },
+        "wifi_provision": {
+            "alias": "idf::wifi_provision",
+            "target": "___idf_wifi_provision",
+            "prefix": "idf",
+            "dir": "/home/j/DoingObject/DoingTV/components/wifi_provision",
+            "type": "LIBRARY",
+            "lib": "__idf_wifi_provision",
+            "reqs": [ "esp_wifi", "esp_netif", "esp_event", "nvs_flash", "wifi_provisioning", "bt", "esp_system" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/wifi_provision/libwifi_provision.a",
+            "sources": [ "/home/j/DoingObject/DoingTV/components/wifi_provision/wifi_provision.c" ],
             "include_dirs": [ "include" ]
         },
         "wifi_provisioning": {
@@ -1239,8 +1254,8 @@
             "priv_reqs": [ "protobuf-c", "bt", "json", "esp_timer", "esp_wifi" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/wifi_provisioning/libwifi_provisioning.a",
-            "sources": [ "/home/j/esp-idf/components/wifi_provisioning/src/wifi_config.c", "/home/j/esp-idf/components/wifi_provisioning/src/wifi_scan.c", "/home/j/esp-idf/components/wifi_provisioning/src/wifi_ctrl.c", "/home/j/esp-idf/components/wifi_provisioning/src/manager.c", "/home/j/esp-idf/components/wifi_provisioning/src/handlers.c", "/home/j/esp-idf/components/wifi_provisioning/src/scheme_console.c", "/home/j/esp-idf/components/wifi_provisioning/proto-c/wifi_config.pb-c.c", "/home/j/esp-idf/components/wifi_provisioning/proto-c/wifi_scan.pb-c.c", "/home/j/esp-idf/components/wifi_provisioning/proto-c/wifi_ctrl.pb-c.c", "/home/j/esp-idf/components/wifi_provisioning/proto-c/wifi_constants.pb-c.c", "/home/j/esp-idf/components/wifi_provisioning/src/scheme_softap.c" ],
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/wifi_provisioning/libwifi_provisioning.a",
+            "sources": [ "/home/j/esp-idf/components/wifi_provisioning/src/wifi_config.c", "/home/j/esp-idf/components/wifi_provisioning/src/wifi_scan.c", "/home/j/esp-idf/components/wifi_provisioning/src/wifi_ctrl.c", "/home/j/esp-idf/components/wifi_provisioning/src/manager.c", "/home/j/esp-idf/components/wifi_provisioning/src/handlers.c", "/home/j/esp-idf/components/wifi_provisioning/src/scheme_console.c", "/home/j/esp-idf/components/wifi_provisioning/proto-c/wifi_config.pb-c.c", "/home/j/esp-idf/components/wifi_provisioning/proto-c/wifi_scan.pb-c.c", "/home/j/esp-idf/components/wifi_provisioning/proto-c/wifi_ctrl.pb-c.c", "/home/j/esp-idf/components/wifi_provisioning/proto-c/wifi_constants.pb-c.c", "/home/j/esp-idf/components/wifi_provisioning/src/scheme_softap.c", "/home/j/esp-idf/components/wifi_provisioning/src/scheme_ble.c" ],
             "include_dirs": [ "include" ]
         },
         "wpa_supplicant": {
@@ -1254,7 +1269,7 @@
             "priv_reqs": [ "mbedtls", "esp_timer", "esp_wifi" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/wpa_supplicant/libwpa_supplicant.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/wpa_supplicant/libwpa_supplicant.a",
             "sources": [ "/home/j/esp-idf/components/wpa_supplicant/port/os_xtensa.c", "/home/j/esp-idf/components/wpa_supplicant/port/eloop.c", "/home/j/esp-idf/components/wpa_supplicant/src/ap/ap_config.c", "/home/j/esp-idf/components/wpa_supplicant/src/ap/ieee802_1x.c", "/home/j/esp-idf/components/wpa_supplicant/src/ap/wpa_auth.c", "/home/j/esp-idf/components/wpa_supplicant/src/ap/wpa_auth_ie.c", "/home/j/esp-idf/components/wpa_supplicant/src/ap/pmksa_cache_auth.c", "/home/j/esp-idf/components/wpa_supplicant/src/ap/sta_info.c", "/home/j/esp-idf/components/wpa_supplicant/src/ap/ieee802_11.c", "/home/j/esp-idf/components/wpa_supplicant/src/ap/comeback_token.c", "/home/j/esp-idf/components/wpa_supplicant/src/common/sae.c", "/home/j/esp-idf/components/wpa_supplicant/src/common/dragonfly.c", "/home/j/esp-idf/components/wpa_supplicant/src/common/wpa_common.c", "/home/j/esp-idf/components/wpa_supplicant/src/utils/bitfield.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/aes-siv.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/sha256-kdf.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/ccmp.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/aes-gcm.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/crypto_ops.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/dh_group5.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/dh_groups.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/ms_funcs.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/sha1-tlsprf.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/sha256-tlsprf.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/sha384-tlsprf.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/sha256-prf.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/sha1-prf.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/sha384-prf.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/md4-internal.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/sha1-tprf.c", "/home/j/esp-idf/components/wpa_supplicant/src/eap_common/eap_wsc_common.c", "/home/j/esp-idf/components/wpa_supplicant/src/common/ieee802_11_common.c", "/home/j/esp-idf/components/wpa_supplicant/src/eap_peer/chap.c", "/home/j/esp-idf/components/wpa_supplicant/src/eap_peer/eap.c", "/home/j/esp-idf/components/wpa_supplicant/src/eap_peer/eap_common.c", "/home/j/esp-idf/components/wpa_supplicant/src/eap_peer/eap_mschapv2.c", "/home/j/esp-idf/components/wpa_supplicant/src/eap_peer/eap_peap.c", "/home/j/esp-idf/components/wpa_supplicant/src/eap_peer/eap_peap_common.c", "/home/j/esp-idf/components/wpa_supplicant/src/eap_peer/eap_tls.c", "/home/j/esp-idf/components/wpa_supplicant/src/eap_peer/eap_tls_common.c", "/home/j/esp-idf/components/wpa_supplicant/src/eap_peer/eap_ttls.c", "/home/j/esp-idf/components/wpa_supplicant/src/eap_peer/mschapv2.c", "/home/j/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast.c", "/home/j/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast_common.c", "/home/j/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast_pac.c", "/home/j/esp-idf/components/wpa_supplicant/src/rsn_supp/pmksa_cache.c", "/home/j/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.c", "/home/j/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa_ie.c", "/home/j/esp-idf/components/wpa_supplicant/src/utils/base64.c", "/home/j/esp-idf/components/wpa_supplicant/src/utils/common.c", "/home/j/esp-idf/components/wpa_supplicant/src/utils/ext_password.c", "/home/j/esp-idf/components/wpa_supplicant/src/utils/uuid.c", "/home/j/esp-idf/components/wpa_supplicant/src/utils/wpabuf.c", "/home/j/esp-idf/components/wpa_supplicant/src/utils/wpa_debug.c", "/home/j/esp-idf/components/wpa_supplicant/src/utils/json.c", "/home/j/esp-idf/components/wpa_supplicant/src/wps/wps.c", "/home/j/esp-idf/components/wpa_supplicant/src/wps/wps_attr_build.c", "/home/j/esp-idf/components/wpa_supplicant/src/wps/wps_attr_parse.c", "/home/j/esp-idf/components/wpa_supplicant/src/wps/wps_attr_process.c", "/home/j/esp-idf/components/wpa_supplicant/src/wps/wps_common.c", "/home/j/esp-idf/components/wpa_supplicant/src/wps/wps_dev_attr.c", "/home/j/esp-idf/components/wpa_supplicant/src/wps/wps_enrollee.c", "/home/j/esp-idf/components/wpa_supplicant/src/common/sae_pk.c", "/home/j/esp-idf/components/wpa_supplicant/src/common/bss.c", "/home/j/esp-idf/components/wpa_supplicant/src/common/scan.c", "/home/j/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_scan.c", "/home/j/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_eap_client.c", "/home/j/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa2_api_port.c", "/home/j/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa_main.c", "/home/j/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpas_glue.c", "/home/j/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_common.c", "/home/j/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wps.c", "/home/j/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa3.c", "/home/j/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_owe.c", "/home/j/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_hostap.c", "/home/j/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/tls_mbedtls.c", "/home/j/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/fastpbkdf2.c", "/home/j/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls.c", "/home/j/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-bignum.c", "/home/j/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-rsa.c", "/home/j/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-ec.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/rc4.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/des-internal.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/aes-wrap.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/aes-unwrap.c", "/home/j/esp-idf/components/wpa_supplicant/src/crypto/aes-ccm.c" ],
             "include_dirs": [ "include", "port/include", "esp_supplicant/include" ]
         },
@@ -1269,7 +1284,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/home/j/Downloads/DoingTV/build/esp-idf/xtensa/libxtensa.a",
+            "file": "/home/j/DoingObject/DoingTV/build/esp-idf/xtensa/libxtensa.a",
             "sources": [ "/home/j/esp-idf/components/xtensa/eri.c", "/home/j/esp-idf/components/xtensa/xt_trax.c", "/home/j/esp-idf/components/xtensa/xtensa_intr.c", "/home/j/esp-idf/components/xtensa/xtensa_intr_asm.S" ],
             "include_dirs": [ "include", "esp32s3/include" ]
         }

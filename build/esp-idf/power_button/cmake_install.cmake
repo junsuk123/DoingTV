@@ -1,4 +1,4 @@
-# Install script for directory: /home/j/Downloads/DoingTV/components/power_button
+# Install script for directory: /home/j/DoingObject/DoingTV/components/power_button
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

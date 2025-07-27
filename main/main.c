@@ -17,12 +17,14 @@
 #include <dirent.h>
 #include <sys/stat.h>
 
+
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "esp_err.h"
 #include "esp_system.h"
 #include "esp_vfs.h"
 #include "esp_spiffs.h"
+#include "protocol_examples_common.h"
 
 #include "st7789.h"
 #include "fontx.h"
@@ -35,10 +37,26 @@
 #include "esp_netif.h"
 #include "nvs_flash.h"
 #include "protocol_examples_common.h"
+#include "wifi_provisioning/manager.h"
+#include "wifi_provisioning/scheme_ble.h"
+
 #include "file_serving_example_common.h"
 #include "power_button.h"
-
+#include "wifi_provision.h"
 #include "charging_indicator.h"
+
+/* EventGroup for provisioning-done notification */
+#include "freertos/event_groups.h"
+
+static EventGroupHandle_t wifi_event_group;
+#define WIFI_CONNECTED_BIT   BIT0
+
+/* IP 획득 시 호출될 콜백 */
+static void on_ip_event(void* arg, esp_event_base_t event_base,
+                        int32_t event_id, void* event_data)
+{
+    xEventGroupSetBits(wifi_event_group, WIFI_CONNECTED_BIT);
+}
 
 static const char *TAG       = "MAIN";
 static const char *TAG_POWER = "POWER_BUTTON";
@@ -366,6 +384,8 @@ void ST7789(void *pvParameters)
 void app_main(void)
 {
     power_button_init(on_power_long_press);
+    wifi_event_group = xEventGroupCreate();
+
 
     ESP_LOGI(TAG, "SPIFFS 초기화 중...");
 
@@ -375,14 +395,42 @@ void app_main(void)
     ESP_ERROR_CHECK(mountSPIFFS("/images", "storage2", 7));
     listSPIFFS("/images/");
 
+    
     ESP_ERROR_CHECK(nvs_flash_init());
     ESP_ERROR_CHECK(esp_netif_init());
+
     ESP_ERROR_CHECK(esp_event_loop_create_default());
+    // esp_netif_create_default_wifi_sta();
+
+    // IP_EVENT_STA_GOT_IP 이벤트 등록
+    ESP_ERROR_CHECK( esp_event_handler_instance_register(
+        IP_EVENT, IP_EVENT_STA_GOT_IP,
+        &on_ip_event, NULL, NULL
+    ));
+
+
+    // 1) 우선 기존 방식으로 일반 Wi-Fi 연결 시도
+    esp_err_t conn_ret = example_connect();
+    if (conn_ret != ESP_OK) {
+        ESP_LOGW(TAG, "Wi-Fi 연결 실패 (%s), BLE 프로비저닝 모드로 전환",
+                 esp_err_to_name(conn_ret));
+
+        /* 2) 강제 프로비저닝 모드 진입 */
+        ESP_ERROR_CHECK( wifi_provision_init(true) );
+
+        /* 3) IP_EVENT_STA_GOT_IP가 발생해 비트가 세팅될 때까지 대기 */
+        xEventGroupWaitBits(wifi_event_group,
+                            WIFI_CONNECTED_BIT,
+                            pdTRUE,    // 비트를 클리어
+                            pdTRUE,    // 단일 비트만 사용하므로 AND 모드
+                            portMAX_DELAY);
+
+        ESP_LOGI(TAG, "프로비저닝으로 Wi-Fi 연결됨");
+    }
 
     /* 파일 저장소 마운트 */
     const char *base_path = "/images";
     ESP_ERROR_CHECK(example_mount_storage(base_path));
-    ESP_ERROR_CHECK(example_connect());
 
 
     /* 파일 서버 시작 */

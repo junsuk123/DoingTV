@@ -1,4 +1,4 @@
-# Install script for directory: /home/j/Downloads/DoingTV/components/charging_indicator
+# Install script for directory: /home/j/DoingObject/DoingTV/components/charging_indicator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

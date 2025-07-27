@@ -1,0 +1,212 @@
+[0;32mI (97) boot:  1 phy_init         RF data          01 01 0ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x28 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403ce6e9
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1750
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+SHA-256 comparison failed:
+Calculated: 7e018cdf14f9814955e4f4d881fcb0b509529c47c0678cc4ea86826ca7445c11
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9908
+[0;32mI (45) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (45) boot: compile time Jul 27 2025 23:18:28[0m
+[0;32mI (45) boot: Multicore bootloader[0m
+[0;32mI (48) boot: chip revision: v0.2[0m
+[0;32mI (52) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (57) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (62) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (66) boot: Enabling RNG early entropy source...[0m
+[0;32mI (72) boot: Partition Table:[0m
+[0;32mI (75) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (83) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (90) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (98) boot:  2 factory          factory app      00 00 00010000 00120000[0m
+[0;32mI (105) boot:  3 storage1         Unknown data     01 82 00130000 00020000[0m
+[0;32mI (113) boot:  4 storage2         Unknown data     01 82 00150000 00500000[0m
+[0;32mI (120) boot: End of partition table[0m
+[0;32mI (124) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=347e4h (215012) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=0004480c vaddr=3fc9be00 size=04de8h ( 19944) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=000495fc vaddr=40374000 size=06a1ch ( 27164) load[0m
+[0;32mI (167) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=c6b24h (813860) map[0m
+[0;32mI (262) esp_image: segment 4: paddr=00116b4c vaddr=4037aa1c size=1133ch ( 70460) load[0m
+[0;32mI (283) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (284) boot: Disabling RNG early entropy source...[0m
+[0;32mI (295) cpu_start: Multicore app[0m
+[0;32mI (295) cpu_start: Pro cpu up.[0m
+[0;32mI (296) cpu_start: Starting app cpu, entry point is 0x40375674[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (314) cpu_start: Pro cpu start user code[0m
+[0;32mI (314) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (314) cpu_start: Application information:[0m
+[0;32mI (317) cpu_start: Project name:     DoingTV[0m
+[0;32mI (322) cpu_start: App version:      1f34308-dirty[0m
+[0;32mI (327) cpu_start: Compile time:     Jul 27 2025 23:18:23[0m
+[0;32mI (333) cpu_start: ELF file SHA256:  5839d6cb90050c3a...[0m
+[0;32mI (339) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (344) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (349) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (354) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (358) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (366) heap_init: At 3FCB2BD0 len 00036B40 (218 KiB): DRAM[0m
+[0;32mI (372) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (378) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (385) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (392) spi_flash: detected chip: winbond[0m
+[0;32mI (395) spi_flash: flash io: dio[0m
+[0;33mW (400) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (408) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (415) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (422) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (427) coexist: coexist rom version e7ae62f[0m
+[0;32mI (432) app_start: Starting scheduler on CPU0[0m
+[0;32mI (437) app_start: Starting scheduler on CPU1[0m
+[0;32mI (437) main_task: Started on CPU0[0m
+[0;32mI (447) main_task: Calling app_main()[0m
+[0;32mI (447) gpio: GPIO[41]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (457) POWER_BUTTON: SYS_EN = HIGH (전원 유지 중)[0m
+[0;32mI (467) gpio: GPIO[40]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (477) MAIN: SPIFFS 초기화 중...[0m
+[0;32mI (487) MAIN: Mounted /fonts as storage1 (total:113201 used:85089)[0m
+[0;32mI (487) MAIN: d_name=ILGH24XB.FNT  d_ino=0  d_type=1[0m
+[0;32mI (497) MAIN: d_name=LATIN32B.FNT  d_ino=0  d_type=1[0m
+[0;32mI (497) MAIN: d_name=ILMH16XB.FNT  d_ino=0  d_type=1[0m
+[0;32mI (507) MAIN: d_name=ILMH24XB.FNT  d_ino=0  d_type=1[0m
+[0;32mI (507) MAIN: d_name=ILGH16XB.FNT  d_ino=0  d_type=1[0m
+[0;32mI (517) MAIN: d_name=ILGH32XB.FNT  d_ino=0  d_type=1[0m
+[0;32mI (517) MAIN: d_name=ILMH32XB.FNT  d_ino=0  d_type=1[0m
+[0;32mI (817) MAIN: Mounted /images as storage2 (total:4811921 used:12550)[0m
+[0;32mI (817) MAIN: d_name=DoingObject.jpg  d_ino=0  d_type=1[0m
+[0;32mI (967) example_connect: Start example_connect.[0m
+[0;32mI (967) pp: pp rom version: e7ae62f[0m
+[0;32mI (967) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (977) wifi:wifi driver task: 3fcbf358, prio:23, stack:6656, core=0[0m
+[0;32mI (987) wifi:wifi firmware version: 91b9630[0m
+[0;32mI (987) wifi:wifi certification version: v7.0[0m
+[0;32mI (987) wifi:config NVS flash: enabled[0m
+[0;32mI (987) wifi:config nano formating: disabled[0m
+[0;32mI (987) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (997) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (997) wifi:Init management short buffer num: 32[0m
+[0;32mI (1007) wifi:Init static tx buffer num: 16[0m
+[0;32mI (1007) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1017) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1017) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1017) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1027) wifi_init: rx ba win: 6[0m
+[0;32mI (1027) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1037) wifi_init: udp mbox: 6[0m
+[0;32mI (1037) wifi_init: tcp mbox: 6[0m
+[0;32mI (1037) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1047) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1047) wifi_init: tcp mss: 1440[0m
+[0;32mI (1057) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1057) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1067) phy_init: phy_version 620,ec7ec30,Sep  5 2023,13:49:13[0m
+[0;32mI (1107) wifi:mode : sta (a0:85:e3:fb:5a:d0)[0m
+[0;32mI (1107) wifi:enable tsf[0m
+[0;32mI (1107) example_connect: Connecting to U+NetA8FC_5G...[0m
+[0;32mI (1107) example_connect: Waiting for IP(s)[0m
+[0;32mI (3517) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (5927) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (8337) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (10747) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (13157) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (15567) example_connect: Wi-Fi disconnected, trying to reconnect...[0m
+[0;32mI (17977) example_connect: WiFi Connect failed 7 times, stop reconnect.[0m
+[0;33mW (17977) MAIN: Wi-Fi 연결 실패 (ESP_FAIL), BLE 프로비저닝 모드로 전환[0m
+[0;32mI (17977) wifi_provision: 이벤트 루프 이미 생성됨, 넘어갑니다.[0m
+[0;32mI (17987) wifi_init: rx ba win: 6[0m
+[0;32mI (17987) wifi_init: tcpip mbox: 32[0m
+[0;32mI (17997) wifi_init: udp mbox: 6[0m
+[0;32mI (17997) wifi_init: tcp mbox: 6[0m
+[0;32mI (18007) wifi_init: tcp tx win: 5744[0m
+[0;32mI (18007) wifi_init: tcp rx win: 5744[0m
+[0;32mI (18007) wifi_init: tcp mss: 1440[0m
+[0;32mI (18017) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (18017) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (18027) wifi_provision: Force provisioning → 기존 manager deinit[0m
+[0;31mE (18037) wifi_prov_mgr: Provisioning manager not initialized[0m
+[0;32mI (18037) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (18047) wifi_provision: Starting BLE provisioning service...[0m
+[0;32mI (18057) BLE_INIT: BT controller compile version [59725b5][0m
+[0;32mI (18057) BLE_INIT: Bluetooth MAC: a0:85:e3:fb:5a:d2
+[0m
+[0;32mI (18067) protocomm_nimble: BLE Host Task Started[0m
+[0;32mI (18067) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (18077) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (18077) NimBLE: disc_mode=2[0m
+[0;32mI (18087) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=256 adv_itvl_max=256[0m
+[0;32mI (18097) NimBLE: 
+[0m
+[0;32mI (18097) wifi_prov_mgr: Provisioning started with service name : DoingTV [0m
+[0;32mI (18107) wifi_provision: Scan for BLE device 'DoingTV' with Espressif app[0m
+[0;32mI (28587) protocomm_nimble: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+[0;32mI (51707) wifi_provision: Received WiFi credentials: SSID=U+NetA8FC, PW=257763JE4#[0m
+[1;31mE (52707) wifi:sta is connecting, return error[0m
+[0;31mE (52707) wifi_prov_mgr: Failed to connect Wi-Fi[0m
+[0;32mI (55077) wifi:new:<4,0>, old:<1,0>, ap:<255,255>, sta:<4,0>, prof:1[0m
+[0;32mI (55417) wifi:state: init -> auth (b0)[0m
+[0;32mI (55417) wifi:state: auth -> assoc (0)[0m
+[0;32mI (55427) wifi:state: assoc -> run (10)[0m
+[0;32mI (55457) wifi:connected with U+NetA8FC, aid = 2, channel 4, BW20, bssid = 18:c5:01:90:a8:fe[0m
+[0;32mI (55457) wifi:security: WPA2-PSK, phy: bgn, rssi: -71[0m
+[0;32mI (55467) wifi:pm start, type: 1[0m
+
+[0;32mI (55467) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (55477) wifi:<ba-add>idx:0 (ifx:0, 18:c5:01:90:a8:fe), tid:6, ssn:2, winSize:64[0m
+[0;32mI (55547) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (56477) esp_netif_handlers: example_netif_sta ip: 192.168.123.108, mask: 255.255.255.0, gw: 192.168.123.1[0m
+[0;32mI (56477) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.123.108[0m
+[0;32mI (56487) wifi_prov_mgr: STA Got IP[0m
+[0;32mI (56487) wifi_provision: Provisioning successful! Stopping service...[0m
+[0;32mI (56497) MAIN: 프로비저닝으로 Wi-Fi 연결됨[0m
+[0;32mI (56497) example_mount: Initializing SPIFFS[0m
+[0;32mI (56517) example_mount: Partition size: total: 113201, used: 85089[0m
+[0;32mI (56517) file_server: Starting HTTP Server on port: '80'[0m
+[0;32mI (56517) MAIN: File server started[0m
+[0;32mI (56517) ST7789: GPIO_CS=5[0m
+[0;32mI (56527) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (56537) ST7789: GPIO_DC=4[0m
+[0;32mI (56537) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (56547) ST7789: GPIO_RESET=8[0m
+[0;32mI (56547) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (56557) main_task: Returned from app_main()[0m
+[0;32mI (56857) ST7789: GPIO_BL=15[0m
+[0;32mI (56857) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (56857) ST7789: GPIO_MOSI=7[0m
+[0;32mI (56857) ST7789: GPIO_SCLK=6[0m
+[0;32mI (57177) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (57177) NimBLE: disc_mode=2[0m
+[0;32mI (57177) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=256 adv_itvl_max=256[0m
+[0;32mI (57187) NimBLE: 
+[0m
+[0;32mI (57567) CHARGE: ADC=1576 raw mV=1331 Batt=3.99V[0m
+[0;32mI (57567) CHARGE: Initial Battery: 3.99V[0m
+[0;32mI (57567) CHARGE: ADC=1575 raw mV=1330 Batt=3.99V[0m
+[0;32mI (57567) CHARGE: Charging detected → BL OFF[0m
+[0;32mI (58577) MAIN: Update Charging Status[0m
+[0;32mI (58577) MAIN: New image detected: /images/DoingObject.jpg[0m
+[0;33mW (58577) decode_jpeg: v5 version. JPEG Decoder is rom tjpgd[0m
+[0;31mE (58577) decode_jpeg: Memory alloc for line 155 failed[0m
+[0;31mE (58587) MAIN: JPEG 디코드 실패: /images/DoingObject.jpg[0m
+[0;32mI (60587) CHARGE: ADC=1575 raw mV=1330 Batt=3.99V[0m
+[0;32mI (60587) CHARGE: Charging detected → BL OFF[0m
+[0;32mI (61587) MAIN: Update Charging Status[0m
+[0;32mI (63587) CHARGE: ADC=1575 raw mV=1330 Batt=3.99V[0m
+[0;32mI (63587) CHARGE: Charging detected → BL OFF[0m
+[0;32mI (64587) MAIN: Update Charging Status[0m
+[0;32mI (66587) CHARGE: ADC=1575 raw mV=1330 Batt=3.99V[0m
+[0;32mI (66587) CHARGE: Charging detected → BL OFF[0m
+[0;32mI (67587) MAIN: Update Charging Status[0m
+[0;32mI (69587) CHARGE: ADC=1575 raw mV=1330 Batt=3.99V[0m
+[0;32mI (69587) CHARGE: Charging detected → BL OFF[0m
+[0;32mI (70587) MAIN: Update Charging Status[0m
+[0;32mI (72587) CHARGE: ADC=1575 raw mV=1330 Batt=3.99V[0m
+[0;32mI (72587) CHARGE: Charging detected → BL OFF[0m

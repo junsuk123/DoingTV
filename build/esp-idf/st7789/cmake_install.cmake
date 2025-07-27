@@ -1,4 +1,4 @@
-# Install script for directory: /home/j/Downloads/DoingTV/components/st7789
+# Install script for directory: /home/j/DoingObject/DoingTV/components/st7789
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

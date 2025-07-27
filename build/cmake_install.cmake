@@ -1,4 +1,4 @@
-# Install script for directory: /home/j/Downloads/DoingTV
+# Install script for directory: /home/j/DoingObject/DoingTV
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/j/Downloads/DoingTV/build/esp-idf/cmake_install.cmake")
+  include("/home/j/DoingObject/DoingTV/build/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/j/Downloads/DoingTV/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/j/DoingObject/DoingTV/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

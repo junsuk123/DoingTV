@@ -1,4 +1,4 @@
-# Install script for directory: /home/j/Downloads/DoingTV/components/decode_jpeg
+# Install script for directory: /home/j/DoingObject/DoingTV/components/decode_jpeg
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,4 +1,4 @@
-# Install script for directory: /home/j/Downloads/DoingTV/components/pngle
+# Install script for directory: /home/j/DoingObject/DoingTV/components/pngle
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,7 +1,0 @@
-[1/6] cd /home/j/Downloads/DoingTV/build/esp-idf/esptool_py && /home/j/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/j/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/j/Downloads/DoingTV/build/partition_table/partition-table.bin /home/j/Downloads/DoingTV/build/DoingTV.bin
-DoingTV.bin binary size 0xd7c90 bytes. Smallest app partition is 0x100000 bytes. 0x28370 bytes (16%) free.
-[2/6] Performing build step for 'bootloader'
-[1/1] cd /home/j/Downloads/DoingTV/build/bootloader/esp-idf/esptool_py && /home/j/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/j/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/j/Downloads/DoingTV/build/bootloader/bootloader.bin
-Bootloader binary size 0x51a0 bytes. 0x2e60 bytes (36%) free.
-[3/4] cd /home/j/Downloads/DoingTV/build && /home/j/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/j/esp-idf/components/spiffs/spiffsgen.py 0x20000 /home/j/Downloads/DoingTV/fonts /home/j/Downloads/DoingTV/build/storage1.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len
-[4/4] cd /home/j/Downloads/DoingTV/build && /home/j/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/j/esp-idf/components/spiffs/spiffsgen.py 0x500000 /home/j/Downloads/DoingTV/images /home/j/Downloads/DoingTV/build/storage2.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len

@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-/home/j/Downloads/DoingTV/build/CMakeFiles/bootloader
-/home/j/Downloads/DoingTV/build/CMakeFiles/bootloader.rule
-/home/j/Downloads/DoingTV/build/CMakeFiles/bootloader-complete.rule
-/home/j/Downloads/DoingTV/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-/home/j/Downloads/DoingTV/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-/home/j/Downloads/DoingTV/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-/home/j/Downloads/DoingTV/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-/home/j/Downloads/DoingTV/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-/home/j/Downloads/DoingTV/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-/home/j/Downloads/DoingTV/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/j/DoingObject/DoingTV/build/CMakeFiles/bootloader
+/home/j/DoingObject/DoingTV/build/CMakeFiles/bootloader.rule
+/home/j/DoingObject/DoingTV/build/CMakeFiles/bootloader-complete.rule
+/home/j/DoingObject/DoingTV/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/j/DoingObject/DoingTV/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/j/DoingObject/DoingTV/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/j/DoingObject/DoingTV/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/j/DoingObject/DoingTV/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/j/DoingObject/DoingTV/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/j/DoingObject/DoingTV/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

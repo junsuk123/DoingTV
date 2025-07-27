@@ -1,4 +1,4 @@
-/* * Data converted from /home/j/Downloads/DoingTV/main/upload_script.html
+/* * Data converted from /home/j/DoingObject/DoingTV/main/upload_script.html
  */
 .data
 .section .rodata.embedded

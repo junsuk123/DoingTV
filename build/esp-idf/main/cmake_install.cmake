@@ -1,4 +1,4 @@
-# Install script for directory: /home/j/Downloads/DoingTV/main
+# Install script for directory: /home/j/DoingObject/DoingTV/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,4 +1,4 @@
-/* * Data converted from /home/j/Downloads/DoingTV/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/j/DoingObject/DoingTV/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded
