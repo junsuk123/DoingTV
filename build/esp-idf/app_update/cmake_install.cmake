@@ -1,4 +1,4 @@
-# Install script for directory: /home/j/esp-idf/components/app_update
+# Install script for directory: /home/j/esp-idf-v5.1.2/components/app_update
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

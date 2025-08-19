@@ -1,4 +1,4 @@
-# Install script for directory: /home/j/esp-idf/components/mqtt
+# Install script for directory: /home/j/esp-idf-v5.1.2/components/mqtt
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

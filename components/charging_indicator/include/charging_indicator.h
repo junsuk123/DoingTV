@@ -1,7 +1,14 @@
-#ifndef CHARGING_INDICATOR_H
-#define CHARGING_INDICATOR_H
+#pragma once
+#include <stdint.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 void charging_indicator_init(void);
-void charging_indicator_update(void);
+// dt_ms: 호출 간격(ms). 권장 1000ms.
+void charging_indicator_update(uint32_t dt_ms);
 
-#endif // CHARGING_INDICATOR_H
+#ifdef __cplusplus
+}
+#endif
