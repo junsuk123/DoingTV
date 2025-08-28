@@ -1,0 +1,765 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490d2
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1750
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+SHA-256 comparison failed:
+Calculated: 9e756a768ecd862ee9a7229d5e541f9f65ab0a28a737e4a1f9760ec382f6521f
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9908
+[0;32mI (45) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (45) boot: compile time Aug 19 2025 11:46:53[0m
+[0;32mI (45) boot: Multicore bootloader[0m
+[0;32mI (48) boot: chip revision: v0.2[0m
+[0;32mI (52) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (57) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (61) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (66) boot: Enabling RNG early entropy source...[0m
+[0;32mI (72) boot: Partition Table:[0m
+[0;32mI (75) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (83) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (90) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (97) boot:  2 factory          factory app      00 00 00010000 00120000[0m
+[0;32mI (105) boot:  3 storage1         Unknown data     01 82 00130000 00020000[0m
+[0;32mI (112) boot:  4 storage2         Unknown data     01 82 00150000 00500000[0m
+[0;32mI (120) boot: End of partition table[0m
+[0;32mI (124) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=33d2ch (212268) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=00043d54 vaddr=3fc9be00 size=04dd8h ( 19928) load[0m
+[0;32mI (160) esp_image: segment 2: paddr=00048b34 vaddr=40374000 size=074e4h ( 29924) load[0m
+[0;32mI (167) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=c5fd4h (810964) map[0m
+[0;32mI (261) esp_image: segment 4: paddr=00115ffc vaddr=4037b4e4 size=10874h ( 67700) load[0m
+[0;32mI (282) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (282) boot: Disabling RNG early entropy source...[0m
+[0;32mI (294) cpu_start: Multicore app[0m
+[0;32mI (294) cpu_start: Pro cpu up.[0m
+[0;32mI (294) cpu_start: Starting app cpu, entry point is 0x40375674[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (312) cpu_start: Pro cpu start user code[0m
+[0;32mI (312) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (313) cpu_start: Application information:[0m
+[0;32mI (315) cpu_start: Project name:     DoingTV[0m
+[0;32mI (320) cpu_start: App version:      c119487-dirty[0m
+[0;32mI (326) cpu_start: Compile time:     Aug 19 2025 14:07:16[0m
+[0;32mI (332) cpu_start: ELF file SHA256:  896f45e3569496ae...[0m
+[0;32mI (338) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (343) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (348) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (352) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (357) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (364) heap_init: At 3FCB2C18 len 00036AF8 (218 KiB): DRAM[0m
+[0;32mI (371) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (377) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (383) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (391) spi_flash: detected chip: winbond[0m
+[0;32mI (394) spi_flash: flash io: dio[0m
+[0;33mW (399) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (407) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (413) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (421) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (426) coexist: coexist rom version e7ae62f[0m
+[0;32mI (431) app_start: Starting scheduler on CPU0[0m
+[0;32mI (436) app_start: Starting scheduler on CPU1[0m
+[0;32mI (436) main_task: Started on CPU0[0m
+[0;32mI (446) main_task: Calling app_main()[0m
+[0;32mI (446) gpio: GPIO[41]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (456) POWER_BUTTON: SYS_EN = HIGH (전원 유지 중)[0m
+[0;32mI (466) gpio: GPIO[40]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (476) MAIN: SPIFFS 초기화...[0m
+[0;32mI (486) MAIN: Mounted /fonts as storage1 (total:113201 used:85089)[0m
+[0;32mI (486) MAIN: d_name=ILMH16XB.FNT  d_ino=0  d_type=1[0m
+[0;32mI (486) MAIN: d_name=ILGH24XB.FNT  d_ino=0  d_type=1[0m
+[0;32mI (496) MAIN: d_name=LATIN32B.FNT  d_ino=0  d_type=1[0m
+[0;32mI (506) MAIN: d_name=ILGH32XB.FNT  d_ino=0  d_type=1[0m
+[0;32mI (506) MAIN: d_name=ILMH24XB.FNT  d_ino=0  d_type=1[0m
+[0;32mI (516) MAIN: d_name=ILMH32XB.FNT  d_ino=0  d_type=1[0m
+[0;32mI (516) MAIN: d_name=ILGH16XB.FNT  d_ino=0  d_type=1[0m
+[0;32mI (816) MAIN: Mounted /images as storage2 (total:4811921 used:12550)[0m
+[0;32mI (816) MAIN: d_name=DoingObject.jpg  d_ino=0  d_type=1[0m
+[0;32mI (966) pp: pp rom version: e7ae62f[0m
+[0;32mI (966) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (976) wifi:wifi driver task: 3fcbf798, prio:23, stack:6656, core=0[0m
+[0;32mI (976) wifi:wifi firmware version: 91b9630[0m
+[0;32mI (986) wifi:wifi certification version: v7.0[0m
+[0;32mI (986) wifi:config NVS flash: enabled[0m
+[0;32mI (986) wifi:config nano formating: disabled[0m
+[0;32mI (986) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (986) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (996) wifi:Init management short buffer num: 32[0m
+[0;32mI (996) wifi:Init static tx buffer num: 16[0m
+[0;32mI (1006) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1006) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1016) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1016) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1016) wifi_init: rx ba win: 6[0m
+[0;32mI (1026) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1026) wifi_init: udp mbox: 6[0m
+[0;32mI (1026) wifi_init: tcp mbox: 6[0m
+[0;32mI (1036) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1036) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1046) wifi_init: tcp mss: 1440[0m
+[0;32mI (1046) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1056) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1056) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (1066) wifi_provision: Already provisioned → use saved STA config in NVS[0m
+[0;32mI (1066) phy_init: phy_version 620,ec7ec30,Sep  5 2023,13:49:13[0m
+[0;32mI (1116) wifi:mode : sta (a0:85:e3:fb:5a:d0)[0m
+[0;32mI (1116) wifi:enable tsf[0m
+[0;32mI (1116) example_mount: Initializing SPIFFS[0m
+[0;32mI (1126) example_mount: Partition size: total: 113201, used: 85089[0m
+[0;32mI (1126) file_server: Starting HTTP Server on port: '80'[0m
+[0;32mI (1126) MAIN: File server started[0m
+[0;32mI (1136) ST7789: GPIO_CS=5[0m
+[0;32mI (1136) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1146) ST7789: GPIO_DC=4[0m
+[0;32mI (1146) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1156) ST7789: GPIO_RESET=8[0m
+[0;32mI (1156) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1166) main_task: Returned from app_main()[0m
+[0;32mI (1466) ST7789: GPIO_BL=15[0m
+[0;32mI (1466) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1466) ST7789: GPIO_MOSI=7[0m
+[0;32mI (1466) ST7789: GPIO_SCLK=6[0m
+[0;32mI (3176) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.002  dV/dt=0.00000 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (3526) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (3526) wifi:state: init -> auth (b0)[0m
+[0;32mI (3536) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3556) wifi:state: assoc -> run (10)[0m
+[0;32mI (3766) wifi:connected with Suksuk, aid = 1, channel 6, BW20, bssid = b6:27:73:8c:a1:b5[0m
+[0;32mI (3766) wifi:security: WPA2-PSK, phy: bgn, rssi: -63[0m
+[0;32mI (3766) wifi:pm start, type: 1[0m
+
+[0;32mI (3776) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (3806) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4176) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.002  dV/dt=0.00000 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (4176) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (4176) MAIN: New image detected: /images/DoingObject.jpg[0m
+[0;33mW (4186) decode_jpeg: v5 version. JPEG Decoder is rom tjpgd[0m
+[0;32mI (4786) esp_netif_handlers: sta ip: 172.20.10.3, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (14816) CHARGE: V=4.005 V  Vraw=4.005  Vema=4.002  dV/dt=0.00060 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (15816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.002  dV/dt=-0.00012 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (15816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (16816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.002  dV/dt=-0.00070 (inst=-0.00300) state=FULL hold=1000 ms[0m
+[0;32mI (17816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.002  dV/dt=0.00004 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (17816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (18816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.002  dV/dt=0.00003 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (19816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.002  dV/dt=-0.00057 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (19816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (20816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.001  dV/dt=-0.00046 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (21816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.001  dV/dt=-0.00037 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (21816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (22816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.001  dV/dt=-0.00029 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (23816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.001  dV/dt=0.00037 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (23816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (24816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.001  dV/dt=-0.00031 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (25816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00025 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (25816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (26816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00020 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (27816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00016 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (27816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (28816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00013 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (29816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00050 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (29816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (30816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00020 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (31816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00016 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (31816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (32816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00047 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (33816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00022 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (33816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (34816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00018 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (35816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00014 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (35816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (36816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00049 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (37816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00039 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (37816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (38816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.001  dV/dt=0.00031 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (39816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00035 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (39816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (40816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.001  dV/dt=0.00032 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (41816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.001  dV/dt=0.00026 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (41816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (42816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.001  dV/dt=-0.00040 (inst=-0.00300) state=FULL hold=1000 ms[0m
+[0;32mI (43816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.001  dV/dt=0.00028 (inst=0.00300) state=FULL hold=2000 ms[0m
+[0;32mI (43816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (44816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00037 (inst=-0.00300) state=FULL hold=3000 ms[0m
+[0;32mI (45816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00030 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (45816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (46816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00024 (inst=0.00000) state=FULL hold=5000 ms[0m
+[0;32mI (47816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00019 (inst=0.00000) state=FULL hold=6000 ms[0m
+[0;32mI (47816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (48816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00015 (inst=0.00000) state=FULL hold=7000 ms[0m
+[0;32mI (49816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00012 (inst=0.00000) state=FULL hold=8000 ms[0m
+[0;32mI (49816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (50816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00010 (inst=0.00000) state=FULL hold=9000 ms[0m
+[0;32mI (51816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00008 (inst=0.00000) state=FULL hold=10000 ms[0m
+[0;32mI (51816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (52816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00006 (inst=0.00000) state=FULL hold=11000 ms[0m
+[0;32mI (53816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00055 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (53816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (54816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00044 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (55816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00025 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (55816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (56816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00020 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (57816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.999  dV/dt=-0.00136 (inst=-0.00600) state=FULL hold=2000 ms[0m
+[0;32mI (57816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (58816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00071 (inst=0.00900) state=FULL hold=0 ms[0m
+[0;32mI (59816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00003 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (59816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (60816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00002 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (61816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00002 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (61816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (62816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00002 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (63816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00001 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (63816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (64816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00121 (inst=-0.00600) state=FULL hold=0 ms[0m
+[0;32mI (65816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00097 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (65816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (66816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00043 (inst=0.00600) state=FULL hold=0 ms[0m
+[0;32mI (67816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00034 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (67816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (68816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00027 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (69816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00022 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (69816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (70816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00103 (inst=-0.00600) state=FULL hold=2000 ms[0m
+[0;32mI (71816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00038 (inst=0.00600) state=FULL hold=0 ms[0m
+[0;32mI (71816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (72816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00030 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (73816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.998  dV/dt=0.00084 (inst=0.00300) state=FULL hold=2000 ms[0m
+[0;32mI (73816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (74816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00007 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (75816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00006 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (75816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (76816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00005 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (77816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00004 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (77816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (78816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00003 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (79816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00002 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (79816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (80816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00062 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (81816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00010 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (81816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (82816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00008 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (83816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00053 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (83816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (84816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00017 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (85816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00014 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (85816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (86816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00011 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (87816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00009 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (87816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (88816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00007 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (89816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00006 (inst=0.00000) state=FULL hold=5000 ms[0m
+[0;32mI (89816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (90816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00005 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (91816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00056 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (91816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (92816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00045 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (93816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00036 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (93816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (94816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00031 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (95816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00035 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (95816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (96816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00028 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (97816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00038 (inst=-0.00300) state=FULL hold=1000 ms[0m
+[0;32mI (97816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (98816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00030 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (99816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00024 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (99816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (100816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00019 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (101816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00015 (inst=0.00000) state=FULL hold=5000 ms[0m
+[0;32mI (101816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (102816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00012 (inst=0.00000) state=FULL hold=6000 ms[0m
+[0;32mI (103816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00010 (inst=0.00000) state=FULL hold=7000 ms[0m
+[0;32mI (103816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (104816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00052 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (105816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00018 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (105816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (106816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00015 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (107816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00012 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (107816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (108816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.999  dV/dt=-0.00129 (inst=-0.00600) state=FULL hold=3000 ms[0m
+[0;32mI (109816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00017 (inst=0.00600) state=FULL hold=4000 ms[0m
+[0;32mI (109816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (110816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00013 (inst=0.00000) state=FULL hold=5000 ms[0m
+[0;32mI (111816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00011 (inst=0.00000) state=FULL hold=6000 ms[0m
+[0;32mI (111816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (112816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00008 (inst=0.00000) state=FULL hold=7000 ms[0m
+[0;32mI (113816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00007 (inst=0.00000) state=FULL hold=8000 ms[0m
+[0;32mI (113816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (114816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00005 (inst=0.00000) state=FULL hold=9000 ms[0m
+[0;32mI (115816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00004 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (115816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (116816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00003 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (117816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00003 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (117816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (118816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00002 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (119816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00002 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (119816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (120816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00119 (inst=-0.00600) state=FULL hold=0 ms[0m
+[0;32mI (121816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00025 (inst=0.00600) state=FULL hold=1000 ms[0m
+[0;32mI (121816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (122816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00020 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (123816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00016 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (123816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (124816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00073 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (125816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00002 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (125816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (126816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00001 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (127816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00001 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (127816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (128816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00001 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (129816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00001 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (129816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (130816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00001 (inst=0.00000) state=FULL hold=5000 ms[0m
+[0;32mI (131816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00120 (inst=-0.00600) state=FULL hold=0 ms[0m
+[0;32mI (131816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (132816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00024 (inst=0.00600) state=FULL hold=1000 ms[0m
+[0;32mI (133816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00019 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (133816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (134816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00075 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (135816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00060 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (135816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (136816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00012 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (137816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00050 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (137816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (138816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00020 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (139816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00016 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (139816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (140816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00013 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (141816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.999  dV/dt=-0.00130 (inst=-0.00600) state=FULL hold=3000 ms[0m
+[0;32mI (141816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (142816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00016 (inst=0.00600) state=FULL hold=4000 ms[0m
+[0;32mI (143816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00073 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (143816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (144816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00002 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (145816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00001 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (145816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (146816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00001 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (147816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00001 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (147816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (148816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00121 (inst=-0.00600) state=FULL hold=0 ms[0m
+[0;32mI (149816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00023 (inst=0.00600) state=FULL hold=1000 ms[0m
+[0;32mI (149816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (150816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00019 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (151816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00015 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (151816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (152816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00012 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (153816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00010 (inst=0.00000) state=FULL hold=5000 ms[0m
+[0;32mI (153816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (154816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00112 (inst=-0.00600) state=FULL hold=6000 ms[0m
+[0;32mI (155816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00030 (inst=0.00600) state=FULL hold=0 ms[0m
+[0;32mI (155816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (156816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00024 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (157816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00019 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (157816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (158816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00015 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (159816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00012 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (159816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (160816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00010 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (161816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00068 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (161816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (162816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00006 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (163816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00005 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (163816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (164816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00056 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (165816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00015 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (165816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (166816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00012 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (167816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00010 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (167816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (168816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00008 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (169816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00006 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (169816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (170816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00005 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (171816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00004 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (171816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (172816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00003 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (173816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00057 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (173816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (174816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00014 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (175816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00011 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (175816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (176816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00009 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (177816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00053 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (177816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (178816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00018 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (179816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00014 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (179816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (180816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00049 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (181816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00021 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (181816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (182816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00017 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (183816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00047 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (183816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (184816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00023 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (185816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00018 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (185816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (186816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00015 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (187816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00012 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (187816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (188816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00009 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (189816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.999  dV/dt=-0.00127 (inst=-0.00600) state=FULL hold=5000 ms[0m
+[0;32mI (189816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (190816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00018 (inst=0.00600) state=FULL hold=6000 ms[0m
+[0;32mI (191816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00014 (inst=0.00000) state=FULL hold=7000 ms[0m
+[0;32mI (191816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (192816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00012 (inst=0.00000) state=FULL hold=8000 ms[0m
+[0;32mI (193816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00009 (inst=0.00000) state=FULL hold=9000 ms[0m
+[0;32mI (193816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (194816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00067 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (195816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00006 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (195816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (196816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00125 (inst=-0.00600) state=FULL hold=1000 ms[0m
+[0;32mI (197816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00020 (inst=0.00600) state=FULL hold=2000 ms[0m
+[0;32mI (197816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (198816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00016 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (199816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00013 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (199816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (200816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00110 (inst=-0.00600) state=FULL hold=5000 ms[0m
+[0;32mI (201816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00032 (inst=0.00600) state=FULL hold=0 ms[0m
+[0;32mI (201816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (202816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00026 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (203816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00081 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (203816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (204816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00005 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (205816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00004 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (205816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (206816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00003 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (207816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00002 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (207816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (208816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00002 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (209816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00001 (inst=0.00000) state=FULL hold=5000 ms[0m
+[0;32mI (209816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (210816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00001 (inst=0.00000) state=FULL hold=6000 ms[0m
+[0;32mI (211816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00001 (inst=0.00000) state=FULL hold=7000 ms[0m
+[0;32mI (211816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (212816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00001 (inst=0.00000) state=FULL hold=8000 ms[0m
+[0;32mI (213816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00001 (inst=0.00000) state=FULL hold=9000 ms[0m
+[0;32mI (213816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (214816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00000 (inst=0.00000) state=FULL hold=10000 ms[0m
+[0;32mI (215816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00060 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (215816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (216816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00012 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (217816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00009 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (217816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (218816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00007 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (219816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00006 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (219816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (220816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00005 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (221816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00004 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (221816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (222816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00003 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (223816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00002 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (223816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (224816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00058 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (225816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00014 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (225816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (226816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.999  dV/dt=-0.00131 (inst=-0.00600) state=FULL hold=1000 ms[0m
+[0;32mI (227816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00015 (inst=0.00600) state=FULL hold=2000 ms[0m
+[0;32mI (227816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (228816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00012 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (229816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00010 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (229816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (230816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00008 (inst=0.00000) state=FULL hold=5000 ms[0m
+[0;32mI (231816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00006 (inst=0.00000) state=FULL hold=6000 ms[0m
+[0;32mI (231816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (232816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00065 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (233816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00052 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (233816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (234816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.999  dV/dt=-0.00138 (inst=-0.00900) state=FULL hold=0 ms[0m
+[0;32mI (235816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00069 (inst=0.00900) state=FULL hold=0 ms[0m
+[0;32mI (235816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (236816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00005 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (237816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00004 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (237816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (238816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00003 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (239816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00002 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (239816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (240816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00002 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (241816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00001 (inst=0.00000) state=FULL hold=5000 ms[0m
+[0;32mI (241816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (242816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00059 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (243816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00013 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (243816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (244816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00010 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (245816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00052 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (245816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (246816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00019 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (247816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00015 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (247816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (248816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00012 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (249816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00050 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (249816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (250816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00020 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (251816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00016 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (251816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (252816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.999  dV/dt=-0.00133 (inst=-0.00600) state=FULL hold=2000 ms[0m
+[0;32mI (253816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00106 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (253816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (254816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00095 (inst=0.00900) state=FULL hold=0 ms[0m
+[0;32mI (255816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00016 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (255816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (256816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00013 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (257816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00010 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (257816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (258816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00008 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (259816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00007 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (259816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (260816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00005 (inst=0.00000) state=FULL hold=5000 ms[0m
+[0;32mI (261816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00004 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (261816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (262816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00117 (inst=-0.00600) state=FULL hold=0 ms[0m
+[0;32mI (263816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00087 (inst=0.00900) state=FULL hold=0 ms[0m
+[0;32mI (263816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (264816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00111 (inst=-0.00900) state=FULL hold=0 ms[0m
+[0;32mI (265816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00031 (inst=0.00600) state=FULL hold=0 ms[0m
+[0;32mI (265816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (266816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00025 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (267816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00020 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (267816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (268816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00076 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (269816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00001 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (269816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (270816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00001 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (271816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00061 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (271816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (272816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00012 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (273816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00009 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (273816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (274816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00007 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (275816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00006 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (275816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (276816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00005 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (277816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00124 (inst=-0.00600) state=FULL hold=0 ms[0m
+[0;32mI (277816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (278816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00021 (inst=0.00600) state=FULL hold=1000 ms[0m
+[0;32mI (279816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00017 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (279816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (280816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00107 (inst=-0.00600) state=FULL hold=3000 ms[0m
+[0;32mI (281816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00035 (inst=0.00600) state=FULL hold=0 ms[0m
+[0;32mI (281816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (282816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00028 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (283816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00022 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (283816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (284816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00018 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (285816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00014 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (285816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (286816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00011 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (287816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00009 (inst=0.00000) state=FULL hold=5000 ms[0m
+[0;32mI (287816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (288816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00067 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (289816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00006 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (289816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (290816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00005 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (291816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00056 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (291816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (292816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.999  dV/dt=-0.00135 (inst=-0.00900) state=FULL hold=0 ms[0m
+[0;32mI (293816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00108 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (293816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (294816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.998  dV/dt=0.00093 (inst=0.00900) state=FULL hold=0 ms[0m
+[0;32mI (295816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00015 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (295816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (296816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00108 (inst=-0.00600) state=FULL hold=1000 ms[0m
+[0;32mI (297816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00033 (inst=0.00600) state=FULL hold=0 ms[0m
+[0;32mI (297816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (298816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00027 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (299816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00021 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (299816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (300816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00017 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (301816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00014 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (301816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (302816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00011 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (303816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00111 (inst=-0.00600) state=FULL hold=5000 ms[0m
+[0;32mI (303816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (304816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.997  dV/dt=-0.00089 (inst=0.00000) state=FULL hold=6000 ms[0m
+[0;32mI (305816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.997  dV/dt=0.00049 (inst=0.00600) state=FULL hold=0 ms[0m
+[0;32mI (305816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (306816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00039 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (307816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00031 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (307816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (308816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.997  dV/dt=-0.00095 (inst=-0.00600) state=FULL hold=0 ms[0m
+[0;32mI (309816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.997  dV/dt=-0.00076 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (309816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (310816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.996  dV/dt=-0.00061 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (311816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.997  dV/dt=0.00071 (inst=0.00600) state=FULL hold=0 ms[0m
+[0;32mI (311816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (312816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.997  dV/dt=0.00057 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (313816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.997  dV/dt=0.00046 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (313816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (314816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.997  dV/dt=0.00037 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (315816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00029 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (315816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (316816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00023 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (317816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.998  dV/dt=0.00079 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (317816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (318816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00003 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (319816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00118 (inst=-0.00600) state=FULL hold=0 ms[0m
+[0;32mI (319816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (320816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00026 (inst=0.00600) state=FULL hold=1000 ms[0m
+[0;32mI (321816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00021 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (321816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (322816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00017 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (323816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00013 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (323816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (324816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00011 (inst=0.00000) state=FULL hold=5000 ms[0m
+[0;32mI (325816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00112 (inst=-0.00600) state=FULL hold=6000 ms[0m
+[0;32mI (325816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (326816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.998  dV/dt=0.00091 (inst=0.00900) state=FULL hold=0 ms[0m
+[0;32mI (327816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00013 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (327816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (328816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00010 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (329816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00008 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (329816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (330816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00114 (inst=-0.00600) state=FULL hold=3000 ms[0m
+[0;32mI (331816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00029 (inst=0.00600) state=FULL hold=4000 ms[0m
+[0;32mI (331816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (332816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00023 (inst=0.00000) state=FULL hold=5000 ms[0m
+[0;32mI (333816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00019 (inst=0.00000) state=FULL hold=6000 ms[0m
+[0;32mI (333816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (334816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00075 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (335816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00000 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (335816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (336816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00000 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (337816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00120 (inst=-0.00600) state=FULL hold=0 ms[0m
+[0;32mI (337816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (338816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00024 (inst=0.00600) state=FULL hold=1000 ms[0m
+[0;32mI (339816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00019 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (339816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (340816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00015 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (341816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00012 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (341816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (342816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00010 (inst=0.00000) state=FULL hold=5000 ms[0m
+[0;32mI (343816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00008 (inst=0.00000) state=FULL hold=6000 ms[0m
+[0;32mI (343816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (344816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00066 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (345816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00127 (inst=-0.00900) state=FULL hold=0 ms[0m
+[0;32mI (345816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (346816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00018 (inst=0.00600) state=FULL hold=1000 ms[0m
+[0;32mI (347816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00015 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (347816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (348816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00012 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (349816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00009 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (349816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (350816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00068 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (351816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00006 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (351816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (352816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00005 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (353816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00056 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (353816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (354816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00015 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (355816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00012 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (355816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (356816) CHARGE: V=4.002 V  Vraw=4.002  Vema=4.000  dV/dt=0.00050 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (357816) CHARGE: V=3.999 V  Vraw=3.999  Vema=4.000  dV/dt=-0.00020 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (357816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (358816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00016 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (359816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00013 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (359816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (360816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00010 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (361816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00008 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (361816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (362816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00006 (inst=0.00000) state=FULL hold=5000 ms[0m
+[0;32mI (363816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.999  dV/dt=-0.00125 (inst=-0.00600) state=FULL hold=6000 ms[0m
+[0;32mI (363816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (364816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00100 (inst=0.00000) state=FULL hold=7000 ms[0m
+[0;32mI (365816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00040 (inst=0.00600) state=FULL hold=0 ms[0m
+[0;32mI (365816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (366816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.998  dV/dt=0.00092 (inst=0.00300) state=FULL hold=1000 ms[0m
+[0;32mI (367816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00014 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (367816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (368816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00011 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (369816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00009 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (369816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (370816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00007 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (371816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00006 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (371816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (372816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00004 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (373816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00004 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (373816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (374816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00063 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (375816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00130 (inst=-0.00900) state=FULL hold=0 ms[0m
+[0;32mI (375816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (376816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00016 (inst=0.00600) state=FULL hold=1000 ms[0m
+[0;32mI (377816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00013 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (377816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (378816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00010 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (379816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=0.00008 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (379816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (380816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00067 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (381816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00007 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (381816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (382816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00005 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (383816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00004 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (383816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (384816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00003 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (385816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00003 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (385816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (386816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00002 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (387816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00002 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (387816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (388816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00001 (inst=0.00000) state=FULL hold=5000 ms[0m
+[0;32mI (389816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00001 (inst=0.00000) state=FULL hold=6000 ms[0m
+[0;32mI (389816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (390816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00121 (inst=-0.00600) state=FULL hold=0 ms[0m
+[0;32mI (391816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00023 (inst=0.00600) state=FULL hold=1000 ms[0m
+[0;32mI (391816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (392816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00019 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (393816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00105 (inst=-0.00600) state=FULL hold=3000 ms[0m
+[0;32mI (393816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (394816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.998  dV/dt=0.00096 (inst=0.00900) state=FULL hold=0 ms[0m
+[0;32mI (395816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00017 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (395816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (396816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00013 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (397816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00109 (inst=-0.00600) state=FULL hold=2000 ms[0m
+[0;32mI (397816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (398816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00033 (inst=0.00600) state=FULL hold=0 ms[0m
+[0;32mI (399816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00026 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (399816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (400816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00021 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (401816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00017 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (401816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (402816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00013 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (403816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00011 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (403816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (404816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.998  dV/dt=-0.00111 (inst=-0.00600) state=FULL hold=5000 ms[0m
+[0;32mI (405816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00031 (inst=0.00600) state=FULL hold=0 ms[0m
+[0;32mI (405816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (406816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00025 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (407816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.997  dV/dt=-0.00100 (inst=-0.00600) state=FULL hold=1000 ms[0m
+[0;32mI (407816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (408816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00040 (inst=0.00600) state=FULL hold=0 ms[0m
+[0;32mI (409816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.997  dV/dt=-0.00088 (inst=-0.00600) state=FULL hold=0 ms[0m
+[0;32mI (409816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (410816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.997  dV/dt=-0.00071 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (411816) CHARGE: V=3.993 V  Vraw=3.993  Vema=3.996  dV/dt=-0.00056 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (411816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (412816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.997  dV/dt=0.00075 (inst=0.00600) state=FULL hold=0 ms[0m
+[0;32mI (413816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.997  dV/dt=0.00060 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (413816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (414816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.997  dV/dt=0.00048 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (415816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.997  dV/dt=0.00038 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (415816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (416816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00031 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (417816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00025 (inst=0.00000) state=FULL hold=0 ms[0m
+[0;32mI (417816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (418816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00020 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (419816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00016 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (419816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (420816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.998  dV/dt=0.00013 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (421816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00070 (inst=0.00300) state=FULL hold=0 ms[0m
+[0;32mI (421816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (422816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00004 (inst=-0.00300) state=FULL hold=0 ms[0m
+[0;32mI (423816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00003 (inst=0.00000) state=FULL hold=1000 ms[0m
+[0;32mI (423816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (424816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00003 (inst=0.00000) state=FULL hold=2000 ms[0m
+[0;32mI (425816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00002 (inst=0.00000) state=FULL hold=3000 ms[0m
+[0;32mI (425816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (426816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00002 (inst=0.00000) state=FULL hold=4000 ms[0m
+[0;32mI (427816) CHARGE: V=3.999 V  Vraw=3.999  Vema=3.999  dV/dt=-0.00001 (inst=0.00000) state=FULL hold=5000 ms[0m
+[0;32mI (427816) MAIN: Update Charging Status / Scan images[0m
+[0;32mI (428816) CHARGE: V=4.002 V  Vraw=4.002  Vema=3.999  dV/dt=0.00059 (inst=0.00300) state=FULL hold=0 ms[0m

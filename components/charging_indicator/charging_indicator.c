@@ -13,7 +13,15 @@ extern TFT_t *g_dev;
 #define DEFAULT_VREF    1100
 #define ADC1_CH         ADC1_CHANNEL_0
 #define ADC_ATTEN       ADC_ATTEN_DB_11
-#define SAMPLES         64
+/* ─ 분압 네트워크(회로 기준) ─ */
+#define DIV_RTOP_K      200.0f   // R3 200k
+#define DIV_RBOT_K      100.0f   // R7 100k
+#define DIV_GAIN        ((DIV_RTOP_K + DIV_RBOT_K) / DIV_RBOT_K)   // 3.0f
+#define ADC_FUDGE       0.985f   // 우선 0.985로 시작, 현장에서 ±0.5% 조정
+/* 안전 클램프(노이즈 튀는 값 억제) */
+#define VCLAMP_MIN      3.0f
+#define VCLAMP_MAX      4.35f
+#define SAMPLES         256      // 64 -> 256
 
 typedef enum {
     CHG_STATE_UNKNOWN = 0,
@@ -41,19 +49,20 @@ typedef struct {
 } chg_metrics_t;
 
 static const chg_cfg_t CDEF = {
-    .ema_alpha_v = 0.12f,
-    .ema_alpha_dvdt = 0.20f,
-    .v_full = 4.15f,
-    .v_full_hard = 4.18f,
-    .dvdt_chg_on  = 3e-4f,
-    .dvdt_chg_off = 1.5e-4f,
-    .dvdt_flat    = 5e-5f,
-    .v_notchg     = 4.12f,
+    .ema_alpha_v    = 0.10f,
+    .ema_alpha_dvdt = 0.08f,
+    .v_full         = 4.18f,   // 실측 보정 후 기준
+    .v_full_hard    = 4.22f,
+    .dvdt_chg_on    = 1.0e-3f,
+    .dvdt_chg_off   = 3.0e-4f,
+    .dvdt_flat      = 1.0e-4f,
+    .v_notchg       = 4.12f,
     .hold_full_ms   = 60000,
     .hold_chg_ms    = 15000,
     .hold_notchg_ms = 15000,
     .relax_ms_after_detach = 90000
 };
+
 
 static chg_cfg_t C;
 static chg_metrics_t M;
@@ -64,17 +73,32 @@ static esp_adc_cal_characteristics_t adc_chars;
 static void init_adc(void){
     adc1_config_width(ADC_WIDTH_BIT_12);
     adc1_config_channel_atten(ADC1_CH, ADC_ATTEN);
-    esp_adc_cal_characterize(ADC_UNIT_1, ADC_ATTEN, ADC_WIDTH_BIT_12,
-                             DEFAULT_VREF, &adc_chars);
+    esp_adc_cal_value_t src = esp_adc_cal_characterize(
+        ADC_UNIT_1, ADC_ATTEN, ADC_WIDTH_BIT_12, DEFAULT_VREF, &adc_chars);
+    ESP_LOGI(TAG, "ADC cal src=%d vref=%" PRIu32 "mV", (int)src, adc_chars.vref);
 }
 
 static float read_batt_v(void){
+    /* 고임피던스 분압 → 샘플/홀드 캡 프리차지용 더미 리드 */
+    (void)adc1_get_raw(ADC1_CH);
+    (void)adc1_get_raw(ADC1_CH);
+    (void)adc1_get_raw(ADC1_CH);
+    (void)adc1_get_raw(ADC1_CH);
+
     uint32_t raw = 0;
-    for (int i=0;i<SAMPLES;i++) raw += adc1_get_raw(ADC1_CH);
+    for (int i = 0; i < SAMPLES; i++) raw += adc1_get_raw(ADC1_CH);
     raw /= SAMPLES;
-    uint32_t mv = esp_adc_cal_raw_to_voltage(raw, &adc_chars);
-    return (float)mv * 3.0f / 1000.0f; // 분압 3:1 가정
+
+    /* ADC 핀 전압(mV) → 배터리 전압(분압 역계수 × 보정) */
+    uint32_t mv = esp_adc_cal_raw_to_voltage(raw, &adc_chars);  // ADC핀 기준 mV
+    float vbatt = (mv / 1000.0f) * DIV_GAIN * ADC_FUDGE;
+
+    /* 물리 범위로 클램프 */
+    if (vbatt < VCLAMP_MIN) vbatt = VCLAMP_MIN;
+    if (vbatt > VCLAMP_MAX) vbatt = VCLAMP_MAX;
+    return vbatt;
 }
+
 
 static inline const char* chg_state_str(chg_state_t s){
     switch (s) {

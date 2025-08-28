@@ -328,16 +328,7 @@ void app_main(void)
 
     ESP_ERROR_CHECK( esp_event_handler_instance_register(
         IP_EVENT, IP_EVENT_STA_GOT_IP, &on_ip_event, NULL, NULL));
-
-    // 1) 기존 STA 연결 시도
-    esp_err_t conn_ret = example_connect();
-    if (conn_ret != ESP_OK) {
-        ESP_LOGW(TAG, "Wi-Fi 실패(%s), BLE 프로비저닝 진입", esp_err_to_name(conn_ret));
-        ESP_ERROR_CHECK( wifi_provision_init(true) );
-        xEventGroupWaitBits(wifi_event_group, WIFI_CONNECTED_BIT,
-                            pdTRUE, pdTRUE, portMAX_DELAY);
-        ESP_LOGI(TAG, "프로비저닝으로 Wi-Fi 연결됨");
-    }
+    ESP_ERROR_CHECK( wifi_provision_init(false) );
 
     const char *base_path = "/images";
     ESP_ERROR_CHECK(example_mount_storage(base_path));

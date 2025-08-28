@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "DoingTV",
-    "project_version":    "bee745a-dirty",
+    "project_version":    "c119487-dirty",
     "project_path":       "/home/j/DoingObject/DoingTV",
     "idf_path":           "/home/j/esp-idf-v5.1.2",
     "build_dir":          "/home/j/DoingObject/DoingTV/build",

@@ -1,0 +1,27 @@
+[1/11] cd /home/j/DoingObject/DoingTV/build && /home/j/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/j/esp-idf-v5.1.2/components/spiffs/spiffsgen.py 0x20000 /home/j/DoingObject/DoingTV/fonts /home/j/DoingObject/DoingTV/build/storage1.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len
+[2/11] Performing build step for 'bootloader'
+[1/1] cd /home/j/DoingObject/DoingTV/build/bootloader/esp-idf/esptool_py && /home/j/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/j/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/j/DoingObject/DoingTV/build/bootloader/bootloader.bin
+Bootloader binary size 0x51a0 bytes. 0x2e60 bytes (36%) free.
+[3/9] Building C object esp-idf/wifi_provision/CMakeFiles/__idf_wifi_provision.dir/wifi_provision.c.obj
+In file included from /home/j/DoingObject/DoingTV/components/wifi_provision/include/wifi_provision.h:4,
+                 from /home/j/DoingObject/DoingTV/components/wifi_provision/wifi_provision.c:1:
+/home/j/DoingObject/DoingTV/components/wifi_provision/wifi_provision.c: In function 'ensure_wifi_stack_ready':
+/home/j/esp-idf-v5.1.2/components/esp_common/include/esp_err.h:117:29: warning: initialization of 'esp_err_t' {aka 'int'} from 'esp_netif_t *' {aka 'struct esp_netif_obj *'} makes integer from pointer without a cast [-Wint-conversion]
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                             ^
+/home/j/DoingObject/DoingTV/components/wifi_provision/wifi_provision.c:30:9: note: in expansion of macro 'ESP_ERROR_CHECK'
+   30 |         ESP_ERROR_CHECK(esp_netif_create_default_wifi_sta());
+      |         ^~~~~~~~~~~~~~~
+[4/9] Linking C static library esp-idf/wifi_provision/libwifi_provision.a
+[5/9] cd /home/j/DoingObject/DoingTV/build && /home/j/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/j/esp-idf-v5.1.2/components/spiffs/spiffsgen.py 0x500000 /home/j/DoingObject/DoingTV/images /home/j/DoingObject/DoingTV/build/storage2.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable DoingTV.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.9.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/j/DoingObject/DoingTV/build/DoingTV.bin
+[9/9] cd /home/j/DoingObject/DoingTV/build/esp-idf/esptool_py && /home/j/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/j/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/j/DoingObject/DoingTV/build/partition_table/partition-table.bin /home/j/DoingObject/DoingTV/build/DoingTV.bin
+DoingTV.bin binary size 0x118260 bytes. Smallest app partition is 0x120000 bytes. 0x7da0 bytes (3%) free.
+Warning: The smallest app partition is nearly full (3% free space left)!
